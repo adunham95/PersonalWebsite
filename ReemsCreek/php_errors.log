@@ -1,0 +1,53 @@
+[23-Jan-2016 16:38:51 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/ubuntu/workspace/nc-cms/system/lib/NCLogin.class.php on line 19
+[23-Jan-2016 16:38:51 UTC] PHP Stack trace:
+[23-Jan-2016 16:38:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/nc-cms/index.php:0
+[23-Jan-2016 16:38:51 UTC] PHP   2. NCCms->Manage() /home/ubuntu/workspace/nc-cms/index.php:8
+[23-Jan-2016 16:38:51 UTC] PHP   3. NCLogin->NCLogin() /home/ubuntu/workspace/nc-cms/system/lib/NCCms.class.php:342
+[23-Jan-2016 16:38:51 UTC] PHP   4. session_start() /home/ubuntu/workspace/nc-cms/system/lib/NCLogin.class.php:19
+[29-Jan-2016 23:23:34 UTC] PHP Warning:  file(USERS_LIST_FILE): failed to open stream: No such file or directory in /home/ubuntu/workspace/Security/flatfile.inc.php on line 118
+[29-Jan-2016 23:23:34 UTC] PHP Stack trace:
+[29-Jan-2016 23:23:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/Security/manager.php:0
+[29-Jan-2016 23:23:34 UTC] PHP   2. include() /home/ubuntu/workspace/Security/manager.php:31
+[29-Jan-2016 23:23:34 UTC] PHP   3. file(*uninitialized*) /home/ubuntu/workspace/Security/flatfile.inc.php:118
+[29-Jan-2016 23:23:34 UTC] PHP Warning:  array_slice() expects parameter 1 to be array, boolean given in /home/ubuntu/workspace/Security/flatfile.inc.php on line 121
+[29-Jan-2016 23:23:34 UTC] PHP Stack trace:
+[29-Jan-2016 23:23:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/Security/manager.php:0
+[29-Jan-2016 23:23:34 UTC] PHP   2. include() /home/ubuntu/workspace/Security/manager.php:31
+[29-Jan-2016 23:23:34 UTC] PHP   3. array_slice(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/Security/flatfile.inc.php:121
+[29-Jan-2016 23:26:34 UTC] PHP Warning:  file(USERS_LIST_FILE): failed to open stream: No such file or directory in /home/ubuntu/workspace/Security/flatfile.inc.php on line 81
+[29-Jan-2016 23:26:34 UTC] PHP Stack trace:
+[29-Jan-2016 23:26:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/Security/manager.php:0
+[29-Jan-2016 23:26:34 UTC] PHP   2. include() /home/ubuntu/workspace/Security/manager.php:31
+[29-Jan-2016 23:26:34 UTC] PHP   3. file(*uninitialized*) /home/ubuntu/workspace/Security/flatfile.inc.php:81
+[29-Jan-2016 23:36:56 UTC] PHP Warning:  include_once(Security/settings.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Security/login.php on line 10
+[29-Jan-2016 23:36:56 UTC] PHP Stack trace:
+[29-Jan-2016 23:36:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/Security/login.php:0
+[29-Jan-2016 23:36:56 UTC] PHP Warning:  include_once(): Failed opening 'Security/settings.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/Security/login.php on line 10
+[29-Jan-2016 23:36:56 UTC] PHP Stack trace:
+[29-Jan-2016 23:36:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/Security/login.php:0
+[29-Jan-2016 23:36:56 UTC] PHP Warning:  include(Security/login_header.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Security/login.php on line 46
+[29-Jan-2016 23:36:56 UTC] PHP Stack trace:
+[29-Jan-2016 23:36:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/Security/login.php:0
+[29-Jan-2016 23:36:56 UTC] PHP   2. showLoginPasswordProtect($error_msg = *uninitialized*) /home/ubuntu/workspace/Security/login.php:90
+[29-Jan-2016 23:36:56 UTC] PHP Warning:  include(): Failed opening 'Security/login_header.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/Security/login.php on line 46
+[29-Jan-2016 23:36:56 UTC] PHP Stack trace:
+[29-Jan-2016 23:36:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/Security/login.php:0
+[29-Jan-2016 23:36:56 UTC] PHP   2. showLoginPasswordProtect($error_msg = *uninitialized*) /home/ubuntu/workspace/Security/login.php:90
+[29-Jan-2016 23:36:56 UTC] PHP Warning:  include(Security/login_form.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Security/login.php on line 47
+[29-Jan-2016 23:36:56 UTC] PHP Stack trace:
+[29-Jan-2016 23:36:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/Security/login.php:0
+[29-Jan-2016 23:36:56 UTC] PHP   2. showLoginPasswordProtect($error_msg = *uninitialized*) /home/ubuntu/workspace/Security/login.php:90
+[29-Jan-2016 23:36:56 UTC] PHP Warning:  include(): Failed opening 'Security/login_form.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/Security/login.php on line 47
+[29-Jan-2016 23:36:56 UTC] PHP Stack trace:
+[29-Jan-2016 23:36:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/Security/login.php:0
+[29-Jan-2016 23:36:56 UTC] PHP   2. showLoginPasswordProtect($error_msg = *uninitialized*) /home/ubuntu/workspace/Security/login.php:90
+[29-Jan-2016 23:36:56 UTC] PHP Warning:  include(Security/login_footer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Security/login.php on line 48
+[29-Jan-2016 23:36:56 UTC] PHP Stack trace:
+[29-Jan-2016 23:36:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/Security/login.php:0
+[29-Jan-2016 23:36:56 UTC] PHP   2. showLoginPasswordProtect($error_msg = *uninitialized*) /home/ubuntu/workspace/Security/login.php:90
+[29-Jan-2016 23:36:56 UTC] PHP Warning:  include(): Failed opening 'Security/login_footer.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/Security/login.php on line 48
+[29-Jan-2016 23:36:56 UTC] PHP Stack trace:
+[29-Jan-2016 23:36:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/Security/login.php:0
+[29-Jan-2016 23:36:56 UTC] PHP   2. showLoginPasswordProtect($error_msg = *uninitialized*) /home/ubuntu/workspace/Security/login.php:90
+[29-Jan-2016 23:38:06 UTC] PHP Parse error:  syntax error, unexpected 'USERS_LIST_FILE' (T_STRING) in /home/ubuntu/workspace/Security/login.php on line 13
+[03-Feb-2016 23:27:11 UTC] PHP Parse error:  syntax error, unexpected ''adunham'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/ubuntu/workspace/Security/password_protect.php on line 54

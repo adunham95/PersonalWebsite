@@ -1,0 +1,27 @@
+.primary {
+    background-color: #2196F3 !important; }
+.primary-text {
+    color: #2196F3 !important; }
+.white-text {
+    color: #FFFFFF !important; }
+.onehundred{
+    width: 100%;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.todo {
+    height: 250px;
+}
+.image { 
+    width:400px;
+  height:250px;
+  margin:10px 200px;
+  opacity:0.4;
+  filter:alpha(opacity=40);
+}

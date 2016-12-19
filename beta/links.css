@@ -1,0 +1,62 @@
+.link {
+    font-weight: bold;
+    text-decoration: none;
+    width: inherit;
+    margin: 0 10px 10px 0 !important;
+    color: white !important;
+}
+
+.twitter-text {
+    color: #55acee;
+}
+.twitter-background {
+    background-color: #55acee !important;
+}
+
+.linkedin-text {
+    color: #0077b5;
+}
+.linkedin-background {
+    background-color: #0077b5 !important;
+}
+
+.googleplus-text {
+     color: #dc4e41;
+}
+.googleplus-background {
+    background-color: #dc4e41 !important;
+}
+
+.facebook-text {
+    color: #3b5998;
+}
+.facebook-background {
+    background-color: #3b5998 !important;
+}
+
+.github-text {
+    color: #999999;
+}
+.github-background {
+    background-color: #999999 !important;
+}
+
+.reddit-text{
+    color: #5f99cf;
+}
+.reddit-background{
+    background-color: #5f99cf !important;
+}
+
+
+.email-text{
+    color: #3D5AFE;
+}
+.email-background{
+    background-color: #3D5AFE !important;
+}
+
+.download {
+    color: #00E676 !important;
+    background-color: transparent !important;
+}

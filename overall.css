@@ -1,0 +1,36 @@
+body {
+    background-color: #BDBDBD;
+}
+
+.adrian-hiking {
+    background: url('photos/hiking.jpg') center top / cover !important;
+}
+
+.header-text {
+    color: white;
+    text-align: center;
+}
+
+.contact-buttons {
+    padding-right: 10px;
+}
+
+.container-fab{
+    position: relative;
+}
+
+.target-fab{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.web-height{
+    height: 110px;
+}
+
+.web-picture{
+    height: 100px;
+    padding: 5px;
+}
