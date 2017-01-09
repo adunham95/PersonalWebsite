@@ -22,47 +22,64 @@
     </head>
     <body class="blue-grey lighten-3">
 
-    <div class="navbar-fixed">
+    <div class="navbar-fixed hide-on-small-only">
         <nav>
             <div class="nav-wrapper personalColor">
                 <a href="index.html" class="brand-logo center">Adrian Dunham</a>
-                <a href="index.html" data-activates="mobile-demo" class="button-collapse">
-                    <i class="fa fa-bars fa-2x" aria-hidden="true" ></i>
-                </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#aboutMeSectionFull">About Me</a></li>
                     <!--<li><a href="#blog">Blog</a></li>-->
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resumeSectionFull">Resume</a></li>
+                    <li><a href="#projectSectionFull">Projects</a></li>
                 </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><img src="img/logo.png" height="100%" width="100%" style="padding: 5px"/></li>
-                    <li><a href="#aboutMe">About Me</a></li>
-                    <!--<li><a href="#blog">Blog</a></li>-->
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
+
             </div>
         </nav>
     </div>
 
 
+    <nav class="nav-extended hide-on-med-and-up">
+        <div class="nav-wrapper personalColor">
+            <a href="#" class="brand-logo">Adrian Dunham</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"></a>
+
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="#aboutMeSectionMobile">About Me</a></li>
+                <li class="tab"><a href="#resumeSectionMobile">Resume</a></li>
+                <li class="tab"><a href="#projectSectionMobile">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
     <div class="container">
         <div class="row">
             <div class="col s12 m8">
-                <div class="section">
+                <div class="section scrollspy hide-on-small-only" id="aboutMeSectionFull">
                     <h5>About Me</h5>
-                    <div id="aboutMe"></div>
+                    <div class="aboutMe"></div>
                 </div>
                 <div class="divider"></div>
-                <div class="section" onload="readResume()">
-                    <h5>Resume</h5>
-                    <div id="resume"></div>
+                <div class="section scrollspy hide-on-small-only" id="resumeSectionFull">
+                    <h5>Skills</h5>
+                    <div class="resume"></div>
                 </div>
                 <div class="divider"></div>
-                <div class="section">
+                <div class="section scrollspy hide-on-small-only" id="projectSectionFull">
                     <h5>Projects</h5>
-                    <div id="projects"></div>
+                    <div class="projects"></div>
+                </div>
+
+
+                <!--MOBILE-->
+                <div class="section scrollspy hide-on-med-and-up" id="aboutMeSectionMobile">
+                    <div class="aboutMe"></div>
+                </div>
+                <div class="section scrollspy hide-on-med-and-up" id="resumeSectionMobile">
+                    <div class="resume"></div>
+                </div>
+                <div class="section scrollspy hide-on-med-and-up" id="projectSectionMobile">
+                    <div class="projects"></div>
                 </div>
             </div>
             <div class="col s12 m4 l4">
@@ -72,7 +89,8 @@
     </div>
 
     <!--Scripts-->
-        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="js/resume.js"></script>
         <script src="node_modules/materialize-css/dist/js/materialize.js"></script>
         <script src="js/main.js"></script>
 

@@ -1,4 +1,4 @@
-{
+var data = {
   "about": {
     "name": "Adrian Dunham",
     "email": "adunham95@gmail.com",
@@ -70,7 +70,7 @@
     "atombrewproject": {
       "name": "AtomBre",
       "role": "co-developer",
-      "description": "A brewery Android app based on the BreweryDB. A hybrid Mobile App using AngularJS & Ionic Framework"
+      "description": "A brewery Android app based on the BreweryDB. A hybrid Mobile App using AngularJS & Ionic Framework",
       "website": "https://play.google.com/store/apps/details?id=com.DamGap.atombrew433336"
     }
   },
@@ -78,7 +78,7 @@
     "webdevelopment": "HTML, CSS, JavaScript,Angular JS,Wordpress",
     "os": "Windows 7, 8, 8.1, 10, Mac OS X, Android",
     "imaging": "Dell’s Kace Box, SCCM, Casper Imaging",
-    "programs": "herwell Service Management "
+    "programs": "Cherwell Service Management "
   },
   "skills": [
     "System deployment using Scripted Installation",
@@ -91,4 +91,4 @@
         "linkedin": "https://www.linkedin.com/in/adrian-dunham-2521488a",
         "github": "github.com/adunham95"
     }
-}
+};
