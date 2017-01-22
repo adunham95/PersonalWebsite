@@ -1,0 +1,14 @@
+.personalColor {
+    background: #3F51B5;
+}
+
+.contactcard {
+    width:100%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body {
+        background: green;
+    }
+}
