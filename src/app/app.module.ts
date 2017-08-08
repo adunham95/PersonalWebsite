@@ -2,15 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import 'hammerjs';
 
-import {MdToolbarModule, MdSidenavModule, MdButtonModule, MdIconModule} from "@angular/material"
+import {MdToolbarModule, MdSidenavModule, MdButtonModule, MdIconModule, MdListModule} from "@angular/material"
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NoPageComponent } from './no-page/no-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 const appRoutes: Routes = [
-  { path: 'home', component: HomePageComponent },
+  { path: '', component: HomePageComponent },
+  { path: 'about', component: AboutPageComponent},
   { path: '**', component: NoPageComponent }
 ];
 
@@ -18,7 +20,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomePageComponent,
-    NoPageComponent
+    NoPageComponent,
+    AboutPageComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -29,7 +32,8 @@ const appRoutes: Routes = [
     MdToolbarModule,
     MdSidenavModule,
     MdButtonModule,
-    MdIconModule
+    MdIconModule,
+    MdListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
