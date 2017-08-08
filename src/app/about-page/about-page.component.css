@@ -2,24 +2,12 @@
 
 .main-content {
   padding: 20px;
-  background: white;
-  color: black;
   font-family: 'Ubuntu', sans-serif;
 }
 
-ul{
-  list-style: none;
-}
 
-li {
-  border: 1px solid darkblue;
-}
 
-span.title {
-  font-weight: 400;
-  font-size: larger;
-}
 
-span.description {
 
-}
+
+
