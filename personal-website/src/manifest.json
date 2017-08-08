@@ -1,6 +1,6 @@
 {
-  "short_name": "Adrian Dunham",
-  "name": "Adrian Dunham Website",
+  "short_name": "ngAdrian",
+  "name": "Adrian Dunhams Angular Blog",
   "icons": [
     {
       "src": "assets/favicons/android-chrome-192x192.png",
@@ -13,8 +13,8 @@
       "type": "image/png"
     }
   ],
-  "background_color": "#003380",
-  "theme_color": "#0566FF",
+  "background_color": "#0055d4",
+  "theme_color": "#0055d4",
   "display": "standalone",
   "start_url": "index.html?launcher=true"
 }

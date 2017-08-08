@@ -25,14 +25,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="373.88682"
-     inkscape:cy="758.36166"
+     inkscape:zoom="1.4"
+     inkscape:cx="297.01349"
+     inkscape:cy="787.01852"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="3840"
-     inkscape:window-height="2035"
+     inkscape:window-height="2019"
      inkscape:window-x="-13"
      inkscape:window-y="-13"
      inkscape:window-maximized="1" />
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -52,6 +52,16 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="fill:#0055d4;fill-opacity:1;stroke-width:0.27895388"
+       id="rect4515"
+       width="200"
+       height="200"
+       x="0"
+       y="-3"
+       ry="4.3792057"
+       inkscape:export-xdpi="96.052437"
+       inkscape:export-ydpi="96.052437" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot4567"
@@ -78,83 +88,83 @@
            x="74.285713"
            y="259.30539"
            style="fill:#ffffff;fill-opacity:1" /></flowRegion><flowPara
-         id="flowPara4573">Developer</flowPara></flowRoot>    <rect
-       style="fill:#00112b;stroke-width:0.22064148"
-       id="rect4485"
-       width="100.96534"
-       height="100.96534"
-       x="-104.71337"
-       y="129.67125"
-       ry="4.4066515"
-       transform="matrix(0.84793063,-0.53010721,0.84793063,0.53010721,0,0)"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <rect
-       inkscape:export-ydpi="96"
-       inkscape:export-xdpi="96"
-       transform="matrix(0.84793063,-0.53010721,0.84793063,0.53010721,0,0)"
-       ry="4.4066515"
-       y="98.476608"
-       x="-73.51873"
-       height="100.96534"
-       width="100.96534"
-       id="rect6147"
-       style="fill:#003380;stroke-width:0.22064148;fill-opacity:1" />
-    <rect
-       style="fill:#0566ff;stroke-width:0.22064148;fill-opacity:1"
-       id="rect6149"
-       width="100.96534"
-       height="100.96534"
-       x="-42.324173"
-       y="67.281883"
-       ry="4.4066515"
-       transform="matrix(0.84793063,-0.53010721,0.84793063,0.53010721,0,0)"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <flowRoot
+         id="flowPara4573">Developer</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot6151"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:0.94117647;stroke:none;"
-       transform="matrix(1.2201782,-0.76030355,1.4549243,0.90657594,301.69623,-248.7295)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:0.94117647;stroke:none"
+       transform="matrix(1.2201782,-0.76030355,1.4549243,0.90657594,296.7739,-255.80096)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><flowRegion
          id="flowRegion6153"
-         style="fill:#ffffff;fill-opacity:0.94117647;"><rect
+         style="fill:#ffffff;fill-opacity:0.94117647"><rect
            id="rect6155"
            width="174.25131"
            height="149.50258"
            x="-309.61176"
            y="80.042259"
-           style="fill:#ffffff;fill-opacity:0.94117647;" /></flowRegion><flowPara
-         id="flowPara6157">AD</flowPara></flowRoot>    <flowRoot
-       transform="matrix(1.2201782,-0.76030355,1.4549243,0.90657594,356.71617,-185.08177)"
-       style="font-style:normal;font-weight:normal;font-size:15.17932606px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:0.94117647;stroke:none"
-       id="flowRoot6165"
-       xml:space="preserve"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><flowRegion
-         style="font-size:15.17932606px;fill:#ffffff;fill-opacity:0.94117647"
-         id="flowRegion6161"><rect
-           style="font-size:15.17932606px;fill:#ffffff;fill-opacity:0.94117647"
-           y="80.042259"
-           x="-309.61176"
-           height="149.50258"
-           width="174.25131"
-           id="rect6159" /></flowRegion><flowPara
-         id="flowPara6163">Adrian</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot6173"
-       style="font-style:normal;font-weight:normal;font-size:13.28190994px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:0.94117647;stroke:none"
-       transform="matrix(1.2201782,-0.76030355,1.4549243,0.90657594,358.83285,-149.09821)"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><flowRegion
-         id="flowRegion6169"
-         style="font-size:13.28190994px;fill:#ffffff;fill-opacity:0.94117647"><rect
-           id="rect6167"
-           width="174.25131"
-           height="149.50258"
-           x="-309.61176"
-           y="80.042259"
-           style="font-size:13.28190994px;fill:#ffffff;fill-opacity:0.94117647" /></flowRegion><flowPara
-         id="flowPara6171">Dunham</flowPara></flowRoot>  </g>
+           style="fill:#ffffff;fill-opacity:0.94117647" /></flowRegion><flowPara
+         id="flowPara6157">ng</flowPara></flowRoot>    <g
+       id="g4647"
+       transform="translate(-1.3112332,-3.413479)">
+      <rect
+         style="fill:#550000;fill-opacity:1;stroke-width:0.22064148"
+         id="rect4519"
+         width="100.96534"
+         height="100.96534"
+         x="-124.79976"
+         y="143.31506"
+         ry="4.4066515"
+         transform="matrix(0.84793063,-0.53010721,0.84793063,0.53010721,0,0)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         inkscape:export-ydpi="96"
+         inkscape:export-xdpi="96"
+         transform="matrix(0.84793063,-0.53010721,0.84793063,0.53010721,0,0)"
+         ry="4.4066515"
+         y="117.08381"
+         x="-98.568497"
+         height="100.96534"
+         width="100.96534"
+         id="rect4521"
+         style="fill:#800000;fill-opacity:1;stroke-width:0.22064148" />
+      <rect
+         inkscape:export-ydpi="96"
+         inkscape:export-xdpi="96"
+         transform="matrix(0.84793063,-0.53010721,0.84793063,0.53010721,0,0)"
+         ry="4.4066515"
+         y="90.852562"
+         x="-72.33725"
+         height="100.96534"
+         width="100.96534"
+         id="rect4523"
+         style="fill:#d40000;fill-opacity:1;stroke-width:0.22064148" />
+      <rect
+         style="fill:#ff0000;fill-opacity:1;stroke-width:0.22064148"
+         id="rect4525"
+         width="100.96534"
+         height="100.96534"
+         x="-46.106094"
+         y="64.621239"
+         ry="4.4066515"
+         transform="matrix(0.84793063,-0.53010721,0.84793063,0.53010721,0,0)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4533"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:0.94117647;stroke:none"
+         transform="matrix(1.2201782,-0.76030355,1.4549243,0.90657594,291.31105,-255.20656)"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><flowRegion
+           id="flowRegion4529"
+           style="fill:#ffffff;fill-opacity:0.94117647"><rect
+             id="rect4527"
+             width="174.25131"
+             height="149.50258"
+             x="-309.61176"
+             y="80.042259"
+             style="fill:#ffffff;fill-opacity:0.94117647" /></flowRegion><flowPara
+           id="flowPara4531">ng</flowPara></flowRoot>    </g>
+  </g>
 </svg>
