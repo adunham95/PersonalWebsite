@@ -6,7 +6,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `npm run static-serve` to serve localhost:4200
+Run `ng serve` to serve localhost:4200
+
+## Test Production builds
+
+Run `ng build --prod`
+After the projects builds run `npm run static-serve` 
 
 ## Code scaffolding
 
