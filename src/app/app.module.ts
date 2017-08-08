@@ -2,7 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import 'hammerjs';
 
-import {MdToolbarModule, MdSidenavModule, MdButtonModule, MdIconModule, MdListModule} from "@angular/material"
+import {
+  MdToolbarModule, MdSidenavModule, MdButtonModule, MdIconModule, MdListModule,
+  MdCardModule
+} from "@angular/material"
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -33,7 +36,8 @@ const appRoutes: Routes = [
     MdSidenavModule,
     MdButtonModule,
     MdIconModule,
-    MdListModule
+    MdListModule,
+    MdCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
