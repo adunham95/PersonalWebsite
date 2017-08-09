@@ -12,11 +12,13 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NoPageComponent } from './no-page/no-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { BlogPageComponent } from './blog-page/blog-page.component';
 
 const appRoutes: Routes = [
+  { path: '**', component: NoPageComponent },
   { path: '', component: HomePageComponent },
   { path: 'about', component: AboutPageComponent},
-  { path: '**', component: NoPageComponent }
+  { path: 'blog', component: BlogPageComponent}
 ];
 
 @NgModule({
@@ -24,7 +26,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomePageComponent,
     NoPageComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    BlogPageComponent
   ],
   imports: [
     RouterModule.forRoot(
