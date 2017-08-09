@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.main-content {
+  padding: 20px;
+  background: white;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.post-card {
+  margin: 10px 0;
+}
