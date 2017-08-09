@@ -5,5 +5,12 @@
     "author": "Adrian Dunham",
     "date": "TBD 2017",
     "content": "I have some text here"
+  },
+  {
+    "id": 2,
+    "title": "Why I do this",
+    "author": "Adrian Dunham",
+    "date": "August 8 2017",
+    "content": "I have some text here"
   }
 ]

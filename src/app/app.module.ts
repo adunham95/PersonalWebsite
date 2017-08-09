@@ -15,10 +15,10 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 
 const appRoutes: Routes = [
-  { path: '**', component: NoPageComponent },
   { path: '', component: HomePageComponent },
   { path: 'about', component: AboutPageComponent},
-  { path: 'blog', component: BlogPageComponent}
+  { path: 'blog', component: BlogPageComponent},
+  { path: '**', component: NoPageComponent }
 ];
 
 @NgModule({
