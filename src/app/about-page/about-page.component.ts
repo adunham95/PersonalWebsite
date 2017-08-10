@@ -15,7 +15,7 @@ export class AboutPageComponent implements OnInit {
 
   getMyResume() {
     console.log('Running getMyResume');
-    this.resume.getResume()
+    this.myResume = this.resume.getResume()
   }
 
   ngOnInit() {

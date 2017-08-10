@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpClientModule} from "@angular/common/http";
 import 'hammerjs';
 
 import {
@@ -13,7 +14,6 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NoPageComponent } from './no-page/no-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
-import {HttpModule} from "@angular/http";
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -36,7 +36,7 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
     MdToolbarModule,
     MdSidenavModule,
     MdButtonModule,

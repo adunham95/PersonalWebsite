@@ -3,22 +3,14 @@
 
   <h2>What I do</h2>
   <p>
-    {{myResume.about.name}}
+    {{myResume.about.aboutMe}}
   </p>
 
   <h2>Accomplishments</h2>
   <ul>
-    <li>
-      <h3>Graduated College</h3>
-      <time>May 2017</time>
-    </li>
-    <li>
-      <h3>Released First Hybrid App on the Google Play store</h3>
-      <time>October 2016</time>
-    </li>
-    <li>
-      <h3>Published my First Website</h3>
-      <time>August 2014</time>
+    <li *ngFor="let item of myResume.about.accomplishments">
+      <h3>{{item.title}}</h3>
+      <time>{{item.date}}</time>
     </li>
   </ul>
 
