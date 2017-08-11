@@ -1,24 +1,12 @@
 <div class="my-content">
-  <md-sidenav-container class="example-container">
-    <md-toolbar>
-      <button type="button" md-button  (click)="sidenav.open()">
-        <md-icon>menu</md-icon>
-      </button>
 
-      ngAdrian
+  <ul class="sidenav">
+    <li class="route"><a routerLink="" routerLinkActive="active">Home</a></li>
+    <li class="route"><a routerLink="/about" routerLinkActive="active">About</a></li>
+    <li class="route"><a routerLink="/blog" routerLinkActive="active">Blog</a></li>
+  </ul>
 
-    </md-toolbar>
-
-    <md-sidenav #sidenav class="example-sidenav">
-      <md-list>
-        <md-list-item><a routerLink="/" routerLinkActive="active">Home</a></md-list-item>
-        <md-list-item><a routerLink="/about" routerLinkActive="active">About</a></md-list-item>
-        <md-list-item><a routerLink="/blog" routerLinkActive="active">Blog</a></md-list-item>
-      </md-list>
-    </md-sidenav>
-
-
+  <div class="content">
     <router-outlet></router-outlet>
-
-  </md-sidenav-container>
+  </div>
 </div>
