@@ -19,6 +19,7 @@ export class ResumeService {
         "phone": "828-398-9038",
         "website": "adriandunham.com",
         "aboutMe": "I am currently a freelance front-end web developer. After writing my first line of HTML and getting 'HELLO WORLD' on the screen I was hooked. I continued to learn HTML, CSS, JavaScript writing basic websites to more advanced single pages app. I still have that passion for turning words on the screen on masterpieces on the screen. After building a basic personal website. I have rewritten it multiple times, making it more modern and adding more technology. My most recent project was taking static designs from a designer and converting it to a WordPress template using VueJS and the WordPress API. I am currently looking for a job as front-end web developer interested in challenges. If you have a challenge for me to tackle contact me at adunham95@gmail.com",
+        "tagLine": "Im Adrian and I am a front end devloper",
         "accomplishments": [
           {
             "date": "May 2017",
@@ -115,6 +116,7 @@ export class ResumeService {
           "descriptionShort": "A Wordpress theme using VueJS",
           "githubURL": "https://github.com/DamGapStudios/AshleyTLee.com",
           "website": "http://www.ashleytlee.com/",
+          "imageURL": "../../assets/mockup/AshleyTLee_dell-xps15-front.png",
           "technology": [
             "VueJS", "HTML", "Wordpress"
           ]
@@ -125,6 +127,7 @@ export class ResumeService {
           "descriptionShort": "A Wordpress site built using the Twig Templateing Language",
           "githubURL": "https://github.com/AmGarera/Traveljuliasway.com",
           "website": "http://www.traveljuliasway.com",
+          "imageURL": "../../assets/mockup/TravelJuliasWay_dell-xps15-front.png",
           "technology": [
             "HTML", "Wordpress", "Twig", "HTML5"
           ]

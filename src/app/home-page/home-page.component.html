@@ -1,19 +1,24 @@
 <div class="main-content">
-  <h1>Recent Posts</h1>
 
-  <md-card class="example-card">
-    <md-card-header>
-      <md-card-title>Blog Post One</md-card-title>
-      <md-card-subtitle>TBD 2017 | Adrian Dunham</md-card-subtitle>
-    </md-card-header>
-    <md-card-content>
-      <p>
-        Bacon ipsum dolor amet reprehenderit eu elit nulla bacon do. Ullamco duis ea mollit. Meatloaf nisi tempor ipsum. Labore chicken prosciutto laborum excepteur mollit velit capicola shoulder. Reprehenderit kevin short ribs filet mignon doner esse beef ribs veniam spare ribs. Picanha shank cillum minim porchetta duis biltong aliqua cupidatat lorem occaecat eu. Minim kevin beef ribs cow aliqua.
-      </p>
-    </md-card-content>
-    <md-card-actions>
-      <button md-button>READ MORE</button>
-      <button md-button>OTHER BUTTON</button>
-    </md-card-actions>
-  </md-card>
+  <h1>{{ myResume.about.tagLine}}</h1>
+
+  <p>
+    Currently I am job searching for a Front End Developer position.
+  </p>
+
+  <h1>Recent Projects</h1>
+
+  <div class="projects">
+    <div class="project-card" *ngFor="let project of myResume.projects| slice:0:3; let i=index">
+      <img [src]="project.imageURL" class="project-mockup">
+      <h3>{{ project.name}}</h3>
+      <a [href]="project.website"><button class="project-button">Website</button></a>
+      <a [href]="project.githubURL"><button class="project-button">Source Code</button></a>
+    </div>
+  </div>
+
+  <!--<h1>Recent Posts</h1>-->
+  <!--<div class="blog">-->
+    <!--<h2>Coming Soon!</h2>-->
+  <!--</div>-->
 </div>
