@@ -8,22 +8,23 @@
 }
 .project-card {
   padding: 10px;
-  background: grey;
 }
 
 .project-card:hover {
-  background: dimgrey;
+  box-shadow: 2px 2px 40px  #003459
 }
 
 .project-button:hover {
-  background-color: #4CAF50; /* Green */
+  background-color: #00A7E1;
   color: white;
 }
 
 .project-button {
-  background-color: transparent;
-  color: black;
-  border: 2px solid #4CAF50; /* Green */
+  background-color: #00A7E1;
+  color: white;
+  padding: 5px;
+  border: 2px solid #00A7E1;
+  width: 49%;
 }
 
 .project-button a {
@@ -34,13 +35,13 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 427px) {
   .project-card {
     width: 33%;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 426px) {
   .projects {
     flex-direction: column;
     justify-content: center;

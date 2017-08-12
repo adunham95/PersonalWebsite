@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import {Observable} from "rxjs/Observable";
 
 @Injectable()
 export class ResumeService {
@@ -18,7 +17,7 @@ export class ResumeService {
         "email": "adunham95@gmail.com",
         "phone": "828-398-9038",
         "website": "adriandunham.com",
-        "aboutMe": "I am currently a freelance front-end web developer. After writing my first line of HTML and getting 'HELLO WORLD' on the screen I was hooked. I continued to learn HTML, CSS, JavaScript writing basic websites to more advanced single pages app. I still have that passion for turning words on the screen on masterpieces on the screen. After building a basic personal website. I have rewritten it multiple times, making it more modern and adding more technology. My most recent project was taking static designs from a designer and converting it to a WordPress template using VueJS and the WordPress API. I am currently looking for a job as front-end web developer interested in challenges. If you have a challenge for me to tackle contact me at adunham95@gmail.com",
+        "aboutMe": "I am a recent graduate of WCU looking for a job as a front end developer. After writing my first line of HTML and getting 'HELLO WORLD' on the screen I was hooked. I continued to learn HTML, CSS, JavaScript writing basic websites to more advanced single pages app. I still have that passion for turning words on the screen on masterpieces on the screen. After building a basic personal website. I have rewritten it multiple times, making it more modern and adding more technology. My most recent project was taking static designs from a designer and converting it to a WordPress template using VueJS and the WordPress API. I am currently looking for a job as front-end web developer interested in challenges. If you have a challenge for me to tackle contact me at adunham95@gmail.com",
         "tagLine": "Im Adrian and I am a front end devloper",
         "accomplishments": [
           {
@@ -113,6 +112,7 @@ export class ResumeService {
         {
           "name": "Ashely T Lee",
           "role": "Co-Developer",
+          "dateComplete": "July 2017",
           "descriptionShort": "A Wordpress theme using VueJS",
           "githubURL": "https://github.com/DamGapStudios/AshleyTLee.com",
           "website": "http://www.ashleytlee.com/",
@@ -124,6 +124,7 @@ export class ResumeService {
         {
           "name": "Travel Julia's Way",
           "role": "Co-Developer",
+          "dateComplete": "April 2017",
           "descriptionShort": "A Wordpress site built using the Twig Templateing Language",
           "githubURL": "https://github.com/AmGarera/Traveljuliasway.com",
           "website": "http://www.traveljuliasway.com",
@@ -135,6 +136,7 @@ export class ResumeService {
         {
           "name": "TreeApp Beta",
           "role": "Lead Developer",
+          "dateComplete": "ay 2017",
           "descriptionShort": "Capstone Project to build an app to display trees around Western Carolina University’s campus using the user's geolocation",
           "githubURL": "https://github.com/adunham95/TreeApp-Capstone",
           "website": "https://play.google.com/store/apps/details?id=com.damgap.treeapp",
@@ -145,6 +147,7 @@ export class ResumeService {
         {
           "name": "AtomBrew",
           "role": "Co-Developer",
+          "dateComplete": "October 2017",
           "descriptionShort": "A brewery Android app based on the BreweryDB. A hybrid Mobile App using AngularJS & Ionic Framework",
           "githubURL": "https://github.com/AmGarera/IonBrew",
           "website": "https://play.google.com/store/apps/details?id=com.DamGap.atombrew433336",
@@ -155,6 +158,7 @@ export class ResumeService {
         {
           "name": "Reems Creek Community Website",
           "role": "Lead Developer",
+          "dateComplete": "April 2015",
           "descriptionShort": "A community website for the members of Reems Creek Community",
           "githubURL": "",
           "website": "http://www.reemscreekcommunity.org/",
@@ -164,7 +168,7 @@ export class ResumeService {
         }
       ],
       "knowledge": {
-        "webDevelopment": ["HTML", "CSS", "JavaScript", "Angular JS", "VueJS","Wordpress"],
+        "webDevelopment": ["HTML", "CSS", "JavaScript", "Angular JS", "VueJS", "Wordpress"],
         "os": ["Windows 7", "Windows 8", "Windows 8.1", "Windows 10", "Mac OS X", "Android"],
         "imaging": ["Dell’s Kace Box", "SCCM", "Casper Imaging"],
         "programs": ["Cherwell Service Management", "Visual Studio 2015", "WebStorm", "PHPStorm", "IntelliJ IDEA"]
@@ -186,10 +190,6 @@ export class ResumeService {
           "url": "https://www.linkedin.com/in/adrian-dunham-2521488a"
         }
       ],
-      "hireMe": [
-        "Pushing A mobile-first philosophy"
-      ]
-
     };
     console.log(this.resume);
     return this.resume;

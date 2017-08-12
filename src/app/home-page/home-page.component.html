@@ -10,8 +10,9 @@
 
   <div class="projects">
     <div class="project-card" *ngFor="let project of myResume.projects| slice:0:3; let i=index">
-      <img [src]="project.imageURL" class="project-mockup">
       <h3>{{ project.name}}</h3>
+      <img [src]="project.imageURL" class="project-mockup">
+      <p>{{ project.descriptionShort}}</p>
       <a [href]="project.website"><button class="project-button">Website</button></a>
       <a [href]="project.githubURL"><button class="project-button">Source Code</button></a>
     </div>
