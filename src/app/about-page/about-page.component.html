@@ -1,17 +1,36 @@
 <div class="main-content">
-  <h1>About Me</h1>
 
-  <h2>What I do</h2>
-  <p>
-    {{myResume.about.aboutMe}}
-  </p>
+  <div class="container">
+    <div class="element aboutMe">
+      <span class="element-title">Am</span>
+    </div>
 
-  <h2>Accomplishments</h2>
-  <ul>
-    <li *ngFor="let item of myResume.about.accomplishments">
-      <h3>{{item.title}}</h3>
-      <time>{{item.date}}</time>
-    </li>
-  </ul>
+    <div class="element-content">
+      <h1>About Me</h1>
+
+      <p>
+        {{ myResume.about.aboutMe}}
+      </p>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="element milestones">
+      <span class="element-title">Mi</span>
+    </div>
+
+    <div class="element-content">
+      <h1>Milestones</h1>
+
+      <ul>
+        <li *ngFor="let item of myResume.about.accomplishments">
+          <h3>{{item.title}}</h3>
+          <time>{{item.date}}</time>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 
 </div>

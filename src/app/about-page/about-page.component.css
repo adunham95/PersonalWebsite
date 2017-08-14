@@ -5,6 +5,39 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+.container {
+  display: flex;
+
+}
+
+.element {
+  height: 100px;
+  min-width: 100px;
+  border: solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element-title {
+  font-size: 45px;
+  font-family: serif;
+}
+
+
+.element-content {
+  margin: 20px;
+}
+
+.aboutMe {
+  background: #8A2BE2;
+  color: white;
+}
+
+.milestones {
+  background: #29E500;
+  color: white;
+}
 
 
 
