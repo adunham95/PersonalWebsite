@@ -14,11 +14,13 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NoPageComponent } from './no-page/no-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'about', component: AboutPageComponent},
   { path: 'blog', component: BlogPageComponent},
+  { path: 'project', component: ProjectPageComponent},
   { path: '**', component: NoPageComponent }
 ];
 
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
     HomePageComponent,
     NoPageComponent,
     AboutPageComponent,
-    BlogPageComponent
+    BlogPageComponent,
+    ProjectPageComponent
   ],
   imports: [
     RouterModule.forRoot(

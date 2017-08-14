@@ -1,8 +1,9 @@
 <div class="my-content">
 
   <ul class="sidenav">
-    <li class="route"><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li class="route"><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
     <li class="route"><a routerLink="/about" routerLinkActive="active">About</a></li>
+    <li class="route"><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
     <!--<li class="route"><a routerLink="/blog" routerLinkActive="active">Blog</a></li>-->
   </ul>
 

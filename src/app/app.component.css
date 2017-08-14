@@ -1,3 +1,10 @@
+/*MAIN COLORS*/
+/*#7CFEF0;*/
+/*#00A7E1;*/
+/*#6BFFB8;*/
+/*#003459;*/
+/*#007EA7;*/
+
 body {margin: 0;}
 
 /*NAVBAR STUFF*/
@@ -32,8 +39,6 @@ ul.sidenav li a:hover:not(.active) {
 
 div.content {
   margin-left: 250px;
-  padding: 1px 16px;
-  height: 1000px;
 }
 
 @media screen and (max-width: 1024px) {

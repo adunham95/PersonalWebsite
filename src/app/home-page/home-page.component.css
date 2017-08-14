@@ -2,6 +2,7 @@
 
 .main-content {
   font-family: 'Ubuntu', sans-serif;
+  padding: 20px;
 }
 .projects {
   display: flex;
