@@ -15,6 +15,7 @@ import { NoPageComponent } from './no-page/no-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
+import { ElementBlockComponent } from './element-block/element-block.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     NoPageComponent,
     AboutPageComponent,
     BlogPageComponent,
-    ProjectPageComponent
+    ProjectPageComponent,
+    ElementBlockComponent
   ],
   imports: [
     RouterModule.forRoot(
