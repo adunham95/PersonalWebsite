@@ -5,6 +5,31 @@
 
 .container {
   display: flex;
+  width: 100%;
+}
+
+.link {
+  border: solid 1px black;
+  background: #654597;
+  color: white;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.element-content {
+  width: 100%;
+}
+
+h2, h3, p {
+  margin:5px 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.project-card {
+  display: flex;
 }
 
 @media screen and (max-width: 1024px) {
@@ -24,5 +49,17 @@
   .title {
     text-align: center;
     margin: 0;
+  }
+
+  .link{
+    text-align: center;
+  }
+
+  .project-card {
+    border: 1px white solid;
+    background: lightgray;
+    margin: 10px 0;
+    padding: 10px 10px 15px 10px;
+    flex-direction: column;
   }
 }
