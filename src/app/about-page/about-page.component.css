@@ -28,17 +28,17 @@
 }
 
 .aboutMe {
-  background: #8A2BE2;
+  background: #45BFE9;
   color: white;
 }
 
 .milestones {
-  background: #29E500;
+  background: #6DACE8;
   color: white;
 }
 
 .contactMe {
-  background: #FEC200;
+  background: #33658A;
   color: white;
 }
 
@@ -58,9 +58,13 @@
 }
 
 .contact-elementRow {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: 100%;
+}
+
+.contact {
 }
 
 
@@ -70,7 +74,6 @@
 
 @media screen and (max-width: 426px) {
   .container {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }

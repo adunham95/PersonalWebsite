@@ -1,9 +1,9 @@
 /*MAIN COLORS*/
-/*#7CFEF0;*/
-/*#00A7E1;*/
-/*#6BFFB8;*/
-/*#003459;*/
-/*#007EA7;*/
+/*7CFEF0*/
+/*45BFE9*/
+/*A2ABAB*/
+/*003459*/
+/*33658A*/
 
 body {margin: 0;}
 
@@ -39,7 +39,7 @@ ul.sidenav li a:hover:not(.active) {
 
 div.content {
   margin-left: 250px;
-  background: #C0C0C0;
+  background: #A2ABAB;
 }
 
 @media screen and (max-width: 1024px) {
