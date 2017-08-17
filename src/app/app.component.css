@@ -9,55 +9,109 @@ body {margin: 0;}
 
 /*NAVBAR STUFF*/
 
-ul.sidenav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 250px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
 
-ul.sidenav li a {
+
+a {
   display: block;
-  color: #000;
+  color: white;
   padding: 8px 16px;
   text-decoration: none;
+  align-items: flex-end;
 }
 
-ul.sidenav li a.active {
+.item {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  width: 100%;
+}
+
+a.home {
   background-color: #00A7E1;
+}
+a.about {
+  background-color: #45BFE9;
+}
+a.projects {
+  background-color: #654597;
+}
+a.blog {
+  background-color: #00A7E1;
+}
+
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  background: #5F6B6F;
   color: white;
 }
 
-ul.sidenav li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+#navigation {
+  display: flex;
 }
+
 
 div.content {
-  margin-left: 250px;
   background: #A2ABAB;
 }
 
+.close {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
-  ul.sidenav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  ul.sidenav li a {
-    float: left;
-    padding: 15px;
-  }
-  div.content {margin-left: 0;}
+
+
 }
 
 @media screen and (max-width: 426px) {
-  ul.sidenav li a {
-    text-align: center;
-    float: none;
+
+  .navBar {
+    justify-content: center;
   }
+  .item {
+    color: white;
+    text-align: center;
+  }
+
+  #navigation {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  #navigation {
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #5F6B6F; /* Black fallback color */
+    background-color: rgba(95,107,111, 0.9);/* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    color: white;
+  }
+
+  a{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 45pt;
+  }
+
+  .close {
+    display: inherit;
+  }
+
+  div.close {
+    font-size: 50pt;
+    text-align: center;
+    align-self: center;
+  }
+
+
+
 }

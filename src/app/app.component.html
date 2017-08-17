@@ -1,11 +1,29 @@
 <div class="my-content">
 
-  <ul class="sidenav">
-    <li class="route"><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
-    <li class="route"><a routerLink="/about" routerLinkActive="active">About</a></li>
-    <li class="route"><a routerLink="/project" routerLinkActive="active">Projects</a></li>
-    <!--<li class="route"><a routerLink="/blog" routerLinkActive="active">Blog</a></li>-->
-  </ul>
+  <div class="navBar">
+    <div class="item" (click)="openNav()">{{title}}</div>
+    <div id="navigation">
+      <div class="close" (click)="closeNav()">
+        &times;
+      </div>
+      <a routerLink="/" (click)="closeNav()" routerLinkActive="home" [routerLinkActiveOptions]="{ exact: true }">
+        <element-block name="H" color="#00A7E1" class="close"></element-block>
+        Home
+      </a>
+      <a routerLink="/about" (click)="closeNav()" routerLinkActive="about">
+        <element-block name="Am" color="#45BFE9" class="close"></element-block>
+        About
+      </a>
+      <a routerLink="/project" (click)="closeNav()" routerLinkActive="projects">
+        <element-block name="Pr" color="#654597" class="close"></element-block>
+        Projects
+      </a>
+      <a routerLink="/blog" (click)="closeNav()" routerLinkActive="blog">
+        <element-block name="Bg" color="#00A7E1" class="close"></element-block>
+        Blog
+      </a>
+    </div>
+  </div>
 
   <div class="content">
     <router-outlet></router-outlet>
