@@ -9,6 +9,7 @@ export class ElementBlockComponent implements OnInit {
 
   @Input('name') elementName: string;
   @Input('color') elementColor: string;
+  @Input('title') elementTitle: string;
 
   constructor() { }
 
