@@ -53,7 +53,11 @@
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 426px) {
+
+  h1.title {
+    margin: 33px 10px;
+  }
 
 }
 
