@@ -12,11 +12,8 @@
 a, .item {
   display: block;
   color: white;
-  height: 25px;
   padding: 8px 16px;
   text-decoration: none;
-  line-height: 25px;
-  vertical-align: middle;
 }
 
 a {
@@ -59,8 +56,13 @@ a.blog {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 426px) {
 
+  a, .item {
+    line-height: 25px;
+    vertical-align: middle;
+    height: 25px;
+  }
 
 }
 
@@ -72,6 +74,8 @@ a.blog {
   .item {
     color: white;
     text-align: center;
+    width: 100%;
+    font-size: 25px;
   }
 
   #navigation {
