@@ -3,7 +3,7 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-.container {
+.container, .actions {
   display: flex;
   width: 100%;
 }
@@ -32,26 +32,46 @@ a:link {
   display: flex;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 426px) {
+  .project-card {
+    border: 1px white solid;
+    background: lightgray;
+    margin: 10px 0 10px 10px;
+    padding: 10px 10px 15px 10px;
+    flex-direction: column;
+  }
 
+  .actions {
+    justify-content: space-between;
+  }
+
+  .link {
+    width: inherit;
+    margin: 5px;
+    text-align: center;
+  }
+
+  h1.title {
+    margin: 33px 10px;
+  }
 }
 
 @media screen and (max-width: 426px) {
-  .container {
+  .container, .actions {
     flex-direction: column;
     align-items: center;
   }
-
   .element-content {
     margin: 0;
   }
 
   .title {
     text-align: center;
-    margin: 0;
+    margin: 10px;
   }
 
-  .link{
+  .link {
+    width: inherit;
     text-align: center;
   }
 
