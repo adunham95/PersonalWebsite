@@ -17,12 +17,14 @@ import { BlogPageComponent } from './blog-page/blog-page.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
 import { ElementBlockComponent } from './element-block/element-block.component';
 import { ElementContactComponent } from './element-contact/element-contact.component';
+import { ConstructionPageComponent } from './construction-page/construction-page.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'about', component: AboutPageComponent},
   { path: 'blog', component: BlogPageComponent},
   { path: 'project', component: ProjectPageComponent},
+  { path: 'construction', component: ConstructionPageComponent},
   { path: '**', component: NoPageComponent }
 ];
 
@@ -35,7 +37,8 @@ const appRoutes: Routes = [
     BlogPageComponent,
     ProjectPageComponent,
     ElementBlockComponent,
-    ElementContactComponent
+    ElementContactComponent,
+    ConstructionPageComponent
   ],
   imports: [
     RouterModule.forRoot(

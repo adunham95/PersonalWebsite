@@ -1,0 +1,9 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2, element-block {
+  align-self: center;
+}
