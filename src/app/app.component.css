@@ -44,6 +44,7 @@ a.blog {
   justify-content: space-between;
   background: #5F6B6F;
   color: white;
+  z-index: 2;
 }
 
 #navigation {
