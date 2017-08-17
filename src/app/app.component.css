@@ -9,19 +9,18 @@
 
 
 
-a {
+a, .item {
   display: block;
   color: white;
+  height: 25px;
   padding: 8px 16px;
   text-decoration: none;
-  align-items: flex-end;
+  line-height: 25px;
+  vertical-align: middle;
 }
 
-.item {
-  display: block;
-  padding: 8px 16px;
-  text-decoration: none;
-  width: 100%;
+a {
+  align-items: flex-end;
 }
 
 a.home {
@@ -38,6 +37,9 @@ a.blog {
 }
 
 .navBar{
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background: #5F6B6F;
@@ -48,6 +50,9 @@ a.blog {
   display: flex;
 }
 
+.content {
+  margin-top: 30px;
+}
 
 .close {
   display: none;
