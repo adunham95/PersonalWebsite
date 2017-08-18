@@ -6,17 +6,24 @@
     Currently I am job searching for a Front End Developer position.
   </p>
 
-  <!--<h1>Recent Projects</h1>-->
 
-  <!--<div class="projects">-->
-    <!--<div class="project-card" *ngFor="let project of myResume.projects| slice:0:3; let i=index">-->
-      <!--<h3>{{ project.name}}</h3>-->
-      <!--<img [src]="project.imageURL" class="project-mockup">-->
-      <!--<p>{{ project.descriptionShort}}</p>-->
-      <!--<a [href]="project.website"><button class="project-button">Website</button></a>-->
-      <!--<a [href]="project.githubURL"><button class="project-button">Source Code</button></a>-->
-    <!--</div>-->
-  <!--</div>-->
+  <div class="container">
+    <element-block name="Pr" color="#654597"></element-block>
+
+    <div class="element-content">
+      <h1 class="title">Projects</h1>
+
+      <div *ngFor="let item of myResume.projects" class="project-card">
+        <h2>{{item.name}}</h2>
+        <h3>{{item.role}}</h3>
+        <p>{{item.descriptionShort}}</p>
+        <div class="actions">
+          <a [href]=item.githubURL class="link">GitHub</a>
+          <a [href]=item.website class="link">Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--<h1>Recent Posts</h1>-->
   <!--<div class="blog">-->
