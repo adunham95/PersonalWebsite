@@ -6,15 +6,8 @@
     <div class="element-content">
       <h1 class="title">Projects</h1>
 
-      <div *ngFor="let item of myResume.projects" class="project-card">
-        <h2>{{item.name}}</h2>
-        <h3>{{item.role}}</h3>
-        <p>{{item.descriptionShort}}</p>
-        <div class="actions">
-          <a [href]=item.githubURL class="link">GitHub</a>
-          <a [href]=item.website class="link">Project</a>
-        </div>
-      </div>
+      <project-card [project]="item" *ngFor="let item of myResume.projects"></project-card>
+
     </div>
   </div>
 
