@@ -10,15 +10,20 @@ import {ResumeService} from "../resume.service";
 export class HomePageComponent implements OnInit {
 
   myResume;
+  myBlog;
 
   constructor(private resume: ResumeService) {}
 
   getMyResume() {
-    console.log('Running getMyResume');
     this.myResume = this.resume.getResume()
+  }
+
+  getMyBlog() {
+    this.myBlog = this.resume.getBlog()
   }
 
   ngOnInit() {
     this.getMyResume()
+    this.getMyBlog()
   }
 }

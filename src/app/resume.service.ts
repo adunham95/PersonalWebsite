@@ -4,13 +4,13 @@ import { Injectable } from '@angular/core';
 export class ResumeService {
 
   resume;
+  blog;
 
   constructor() {
 
   }
 
   getResume(){
-    console.log("in resume service");
     this.resume = {
       "about": {
         "name": "Adrian Dunham",
@@ -191,8 +191,27 @@ export class ResumeService {
         }
       ],
     };
-    console.log(this.resume);
     return this.resume;
+  }
+
+  getBlog() {
+    this.blog =[
+      {
+        "id": 1,
+        "title": "What I learned in a year",
+        "author": "Adrian Dunham",
+        "date": "TBD 2017",
+        "content": "I have some text here"
+      },
+      {
+        "id": 2,
+        "title": "Why I do this",
+        "author": "Adrian Dunham",
+        "date": "August 8 2017",
+        "content": "I have some text here"
+      }
+    ];
+    return this.blog
   }
 
 }
