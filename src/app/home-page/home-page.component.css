@@ -4,56 +4,36 @@
   font-family: 'Ubuntu', sans-serif;
   padding: 20px;
 }
-.projects {
+
+.project-container {
   display: flex;
-}
-.project-card {
-  padding: 10px;
+  width: 100%;
 }
 
-.project-card:hover {
-  box-shadow: 2px 2px 40px  #003459
-}
-
-.project-button:hover {
-  background-color: #00A7E1;
-  color: white;
-}
-
-.project-button {
-  background-color: #00A7E1;
-  color: white;
-  padding: 5px;
-  border: 2px solid #00A7E1;
-  width: 49%;
-}
-
-.project-button a {
-  text-decoration: none;
-}
-
-.project-button a:hover {
-  text-decoration: none;
+.element-content {
+  width: 100%;
 }
 
 @media screen and (min-width: 427px) {
-  .project-card {
-    width: 33%;
+  h1.title {
+    margin: 33px 10px;
   }
+
 }
 
 @media screen and (max-width: 426px) {
-  .projects {
+  .project-container {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+  }
+  .element-content {
+    margin: 0;
   }
 
-  .project-card {
+  .title {
+    text-align: center;
     margin: 10px;
   }
+
 }
 
-.project-mockup {
-  max-width:100%;
-  max-height:100%;
-}
