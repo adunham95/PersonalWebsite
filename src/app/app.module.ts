@@ -18,6 +18,7 @@ import { ProjectPageComponent } from './project-page/project-page.component';
 import { ElementBlockComponent } from './element-block/element-block.component';
 import { ElementContactComponent } from './element-contact/element-contact.component';
 import { ConstructionPageComponent } from './construction-page/construction-page.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
     ProjectPageComponent,
     ElementBlockComponent,
     ElementContactComponent,
-    ConstructionPageComponent
+    ConstructionPageComponent,
+    ProjectCardComponent
   ],
   imports: [
     RouterModule.forRoot(
