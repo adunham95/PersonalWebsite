@@ -64,6 +64,10 @@ a.blog {
     height: 25px;
   }
 
+  .tricon {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 426px) {
