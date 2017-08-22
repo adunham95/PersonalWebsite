@@ -4,6 +4,8 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/Personal-Angular/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/Personal-Angular/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/dist" />
       <excludeFolder url="file://$MODULE_DIR$/personal-website/dist" />
       <excludeFolder url="file://$MODULE_DIR$/personal-website/tmp" />
