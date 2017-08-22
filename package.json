@@ -1,0 +1,36 @@
+{
+  "name": "adrianpersonalwebsite",
+  "version": "1.5.0",
+  "description": "Adrian Dunhams Personal Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "*",
+    "path": "^0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adunham95/PersonalWebsite.git"
+  },
+  "keywords": [
+    "MEAN",
+    "stack",
+    "angularjs"
+  ],
+  "author": "Adrian Dunham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adunham95/PersonalWebsite/issues"
+  },
+  "homepage": "https://github.com/adunham95/PersonalWebsite#readme"
+}

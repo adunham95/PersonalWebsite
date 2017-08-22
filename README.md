@@ -33,3 +33,16 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+To run
+CD to C:\Program Files\MongoDB\Server\3.4\bin and run mongod
+run nodemon in the command prompt for this project to run the project
+
+To start the database server `cd C:\Program Files\MongoDB\Server\3.4\bin` and run `mongod`
+
+To start the website server `nodemon`
+
+To start the front end server `cd angular-src` then `ng serve`
+
+To run the mongo shell `cd C:\Program Files\MongoDB\Server\3.4\bin` and run `mongo.exe`
