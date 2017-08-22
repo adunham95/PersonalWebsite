@@ -1,0 +1,19 @@
+<div class="main-content">
+  <flash-messages></flash-messages>
+  <h2 class="page-header">New Blog Post</h2>
+  <form (submit)="newPostSubmit()">
+    <div>
+      <label>Title</label>
+      <input type="text" [(ngModel)]="title" name="title">
+    </div>
+    <div>
+      <label>Author</label>
+      <input type="text" [(ngModel)]="author" name="author">
+    </div>
+    <div>
+      <label>Body</label>
+      <textarea rows="4" cols="50" [(ngModel)]="body" name="body"></textarea>
+    </div>
+    <input type="submit" value="New Post">
+  </form>
+</div>

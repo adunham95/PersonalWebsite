@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from "@angular/common/http";
-import {HttpModule} from "@angular/http"
+import {HttpModule} from "@angular/http";
+import {FormsModule} from "@angular/forms";
+import {FlashMessagesModule} from "angular2-flash-messages"
 
 import { RouterModule, Routes } from '@angular/router';
 
@@ -19,11 +21,13 @@ import { ConstructionPageComponent } from './views/construction-page/constructio
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { BlogCardComponent } from './components/blog-card/blog-card.component';
 import { BlogCreateComponent } from './components/blog-create/blog-create.component';
+import { NewpostPageComponent } from './views/newpost-page/newpost-page.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'about', component: AboutPageComponent},
   { path: 'blog', component: BlogPageComponent},
+  { path: 'newpost', component: NewpostPageComponent},
   { path: 'project', component: ProjectPageComponent},
   { path: 'construction', component: ConstructionPageComponent},
   { path: '**', component: NoPageComponent }
@@ -42,7 +46,8 @@ const appRoutes: Routes = [
     ConstructionPageComponent,
     ProjectCardComponent,
     BlogCardComponent,
-    BlogCreateComponent
+    BlogCreateComponent,
+    NewpostPageComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -51,7 +56,9 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     HttpClientModule,
-    HttpModule
+    HttpModule,
+    FormsModule,
+    FlashMessagesModule
   ],
   providers: [BlogService],
   bootstrap: [AppComponent]
