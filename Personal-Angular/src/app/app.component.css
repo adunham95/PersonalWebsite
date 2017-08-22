@@ -1,0 +1,125 @@
+/*MAIN COLORS*/
+/*7CFEF0*/
+/*45BFE9*/
+/*A2ABAB*/
+/*003459*/
+/*33658A*/
+
+/*NAVBAR STUFF*/
+
+
+
+a, .item {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+a {
+  align-items: flex-end;
+}
+
+a.home {
+  background-color: #00A7E1;
+}
+a.about {
+  background-color: #2B6240;
+}
+a.projects {
+  background-color: #654597;
+}
+a.blog {
+  background-color: #7E6551;
+}
+
+.navBar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #5F6B6F;
+  color: white;
+  z-index: 2;
+}
+
+#navigation {
+  display: flex;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.close {
+  display: none;
+}
+
+@media screen and (min-width: 426px) {
+
+  a, .item {
+    line-height: 25px;
+    vertical-align: middle;
+    height: 25px;
+  }
+
+  .tricon {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 426px) {
+
+  .navBar {
+    justify-content: center;
+  }
+  .item {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+  }
+
+  #navigation {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  #navigation {
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #5F6B6F; /* Black fallback color */
+    background-color: rgba(95,107,111, 0.9);/* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    color: white;
+  }
+
+  a{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 45pt;
+  }
+
+  .close {
+    display: inherit;
+  }
+
+  div.close {
+    font-size: 50pt;
+    text-align: center;
+    align-self: center;
+  }
+
+
+
+}

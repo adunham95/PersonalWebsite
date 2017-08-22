@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+}
+
+
+.contact-elementRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 650px) {
+
+  .hidden{
+    display: none;
+  }
+
+  .contact-elementRow {
+    justify-content: space-between;
+  }
+
+
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .element-content {
+    margin: 0;
+  }
+
+  .title {
+    text-align: center;
+    margin: 10px;
+  }
+}
+
