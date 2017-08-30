@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {BlogService} from "../../services/blog.service";
+import {FlashMessagesService} from "angular2-flash-messages";
 
 @Component({
   selector: 'app-dashboard-page',
@@ -9,8 +10,11 @@ import {BlogService} from "../../services/blog.service";
 export class DashboardPageComponent implements OnInit {
 
   posts: any;
+  author: string;
+  content: string;
+  title: string;
 
-  constructor(private blogService: BlogService) { }
+  constructor(private blogService: BlogService, private flashMessage: FlashMessagesService) { }
 
   ngOnInit() {
     this.getPosts()
@@ -19,17 +23,38 @@ export class DashboardPageComponent implements OnInit {
   delete(id) {
     this.blogService.deletePosts(id).subscribe(data =>{
       if(data.success){
-        console.log(data.msg)
+        this.flashMessage.show(data.msg, {timeout: 5000});
         this.getPosts()
       }
       else{
-        console.log(data.msg)
+        this.flashMessage.show(data.msg, {timeout: 5000})
       }
     });
   }
 
   edit(id){
     console.log("EDIT")
+  }
+
+  newPostSubmit(){
+    const post = {
+      title: this.title,
+      author: this.author,
+      body: this.content
+    };
+
+    this.blogService.savePost(post).subscribe(data =>{
+      if(data.success){
+        this.flashMessage.show(data.msg, {timeout: 5000});
+        this.title = "";
+        this.author = "";
+        this.content = "";
+        this.getPosts();
+      }
+      else{
+        this.flashMessage.show(data.msg, {timeout: 5000})
+      }
+    });
   }
 
 

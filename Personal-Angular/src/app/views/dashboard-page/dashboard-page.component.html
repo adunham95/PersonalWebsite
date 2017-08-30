@@ -1,9 +1,27 @@
 <div class="main-content">
+  <flash-messages></flash-messages>
+  <h2 class="page-header">New Blog Post</h2>
+  <form (submit)="newPostSubmit()">
+    <div class="input-section left">
+      <label>Title</label>
+      <input type="text" [(ngModel)]="title" name="title" class="half">
+    </div>
+    <div class="input-section right">
+      <label>Author</label>
+      <input type="text" [(ngModel)]="author" name="author" class="half">
+    </div>
+    <div class="input-section">
+      <label>Body</label>
+      <textarea rows="4" cols="50" [(ngModel)]="content" name="content"></textarea>
+    </div>
+    <input type="submit" value="New Post" class="submit-button">
+  </form>
+
   <div class="recent posts">
     <div *ngFor="let post of posts" class="post-card">
       <h2>{{post.title}}</h2>
       <h3>{{post.author}}</h3>
-      <textarea [placeholder]="post.body" style="width: 100%;" rows="10" cols="50">
+      <textarea [value]="post.body" style="width: 100%;" rows="10" cols="50">
 
       </textarea>
       <div class="actions">
