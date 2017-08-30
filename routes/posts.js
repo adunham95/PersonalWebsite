@@ -38,4 +38,16 @@ router.get('/getposts', (req, res, next) => {
   })
 });
 
+router.post('/deletepost', (req, res, next) => {
+  let id = req.body._id;
+    Post.deleteSinglePost(id, (err =>{
+      if (err) {
+        res.json({success: false, msg: "Error retrieving Location"});
+      }
+      else {
+        res.json({success: true, msg: "Deleted post"});
+      }
+    }))
+});
+
 module.exports = router;

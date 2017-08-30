@@ -33,3 +33,7 @@ module.exports.addPost = function (newPost, callback) {
   newPost.save(callback);
 };
 
+module.exports.deleteSinglePost = function (id, callback) {
+  Post.deleteOne({ _id: id }, callback)
+};
+

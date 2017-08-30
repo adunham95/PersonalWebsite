@@ -1,0 +1,15 @@
+<div class="main-content">
+  <div class="recent posts">
+    <div *ngFor="let post of posts" class="post-card">
+      <h2>{{post.title}}</h2>
+      <h3>{{post.author}}</h3>
+      <textarea [placeholder]="post.body" style="width: 100%;" rows="10" cols="50">
+
+      </textarea>
+      <div class="actions">
+        <button (click)="delete(post._id)" class="delete">Delete</button>
+        <button (click)="edit(post._id)" class="edit">Edit</button>
+      </div>
+    </div>
+  </div>
+</div>

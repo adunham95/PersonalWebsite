@@ -5,10 +5,12 @@ import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import {FlashMessagesModule} from "angular2-flash-messages"
 
+//Routing
 import { RouterModule, Routes } from '@angular/router';
-
+//Services
 import {BlogService} from "./services/blog.service"
 
+//Components
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './views/home-page/home-page.component';
 import { NoPageComponent } from './views/no-page/no-page.component';
@@ -22,12 +24,13 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import { BlogCardComponent } from './components/blog-card/blog-card.component';
 import { BlogCreateComponent } from './components/blog-create/blog-create.component';
 import { NewpostPageComponent } from './views/newpost-page/newpost-page.component';
+import {DashboardPageComponent} from "./views/dashboard-page/dashboard-page.component"
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'about', component: AboutPageComponent},
   { path: 'blog', component: BlogPageComponent},
-  { path: 'newpost', component: NewpostPageComponent},
+  { path: 'dashboard', component: DashboardPageComponent},
   { path: 'project', component: ProjectPageComponent},
   { path: 'construction', component: ConstructionPageComponent},
   { path: '**', component: NoPageComponent }
@@ -47,7 +50,8 @@ const appRoutes: Routes = [
     ProjectCardComponent,
     BlogCardComponent,
     BlogCreateComponent,
-    NewpostPageComponent
+    NewpostPageComponent,
+    DashboardPageComponent
   ],
   imports: [
     RouterModule.forRoot(

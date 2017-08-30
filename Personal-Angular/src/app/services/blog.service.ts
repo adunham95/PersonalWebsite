@@ -21,4 +21,11 @@ export class BlogService {
     return this.http.get('http://localhost:8080/posts/getposts', {headers: headers}).map(res => res.json())
   }
 
+  deletePosts(id){
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('http://localhost:8080/posts/deletepost', {_id: id}, {headers: headers}).map(res => res.json())
+  }
+
+
 }

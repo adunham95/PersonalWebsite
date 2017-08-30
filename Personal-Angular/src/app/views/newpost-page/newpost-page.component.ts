@@ -13,9 +13,12 @@ export class NewpostPageComponent implements OnInit {
   author: String;
   body: String;
 
+  posts;
+
   constructor(private blogService: BlogService, private flashMessage: FlashMessagesService) { }
 
   ngOnInit() {
+    this.getMyBlog()
   }
 
   newPostSubmit(){
@@ -34,4 +37,17 @@ export class NewpostPageComponent implements OnInit {
       }
     });
   }
+
+  getMyBlog() {
+    this.blogService.getPosts().subscribe(posts =>{
+      console.log(posts);
+      this.posts = posts.posts;
+      console.log(this.posts)
+    }, err =>{
+      console.log(err);
+      return false
+    });
+  }
+
+
 }
