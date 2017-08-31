@@ -12,19 +12,28 @@ export class BlogService {
   savePost(post){
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:8080/posts/savepost', post, {headers: headers}).map(res => res.json())
+    //Testing
+    // return this.http.post('http://localhost:8080/posts/savepost', post, {headers: headers}).map(res => res.json())
+    //Prod
+    return this.http.post('posts/savepost', post, {headers: headers}).map(res => res.json())
   }
 
   getPosts(){
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.get('http://localhost:8080/posts/getposts', {headers: headers}).map(res => res.json())
+    //Testing
+    // return this.http.get('http://localhost:8080/posts/getposts', {headers: headers}).map(res => res.json());
+    //Production
+    return this.http.get('posts/getposts', {headers: headers}).map(res => res.json())
   }
 
   deletePosts(id){
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:8080/posts/deletepost', {_id: id}, {headers: headers}).map(res => res.json())
+    //Testing
+    // return this.http.post('http://localhost:8080/posts/deletepost', {_id: id}, {headers: headers}).map(res => res.json())
+    //Production
+    return this.http.post('posts/deletepost', {_id: id}, {headers: headers}).map(res => res.json())
   }
 
 
