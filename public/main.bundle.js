@@ -543,17 +543,26 @@ var BlogService = (function () {
     BlogService.prototype.savePost = function (post) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('http://localhost:8080/posts/savepost', post, { headers: headers }).map(function (res) { return res.json(); });
+        //Testing
+        // return this.http.post('http://localhost:8080/posts/savepost', post, {headers: headers}).map(res => res.json())
+        //Prod
+        return this.http.post('posts/savepost', post, { headers: headers }).map(function (res) { return res.json(); });
     };
     BlogService.prototype.getPosts = function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.get('http://localhost:8080/posts/getposts', { headers: headers }).map(function (res) { return res.json(); });
+        //Testing
+        // return this.http.get('http://localhost:8080/posts/getposts', {headers: headers}).map(res => res.json());
+        //Production
+        return this.http.get('posts/getposts', { headers: headers }).map(function (res) { return res.json(); });
     };
     BlogService.prototype.deletePosts = function (id) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('http://localhost:8080/posts/deletepost', { _id: id }, { headers: headers }).map(function (res) { return res.json(); });
+        //Testing
+        // return this.http.post('http://localhost:8080/posts/deletepost', {_id: id}, {headers: headers}).map(res => res.json())
+        //Production
+        return this.http.post('posts/deletepost', { _id: id }, { headers: headers }).map(function (res) { return res.json(); });
     };
     return BlogService;
 }());
