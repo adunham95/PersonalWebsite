@@ -19,19 +19,18 @@ import { BlogPageComponent } from './views/blog-page/blog-page.component';
 import { ProjectPageComponent } from './views/project-page/project-page.component';
 import { ElementBlockComponent } from './components/element-block/element-block.component';
 import { ElementContactComponent } from './components/element-contact/element-contact.component';
-import { ConstructionPageComponent } from './views/construction-page/construction-page.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { BlogCardComponent } from './components/blog-card/blog-card.component';
 import { BlogCreateComponent } from './components/blog-create/blog-create.component';
-import {DashboardPageComponent} from "./views/dashboard-page/dashboard-page.component"
+import {DashboardPageComponent} from "./views/dashboard-page/dashboard-page.component";
+import { LoginPageComponent } from './views/login-page/login-page.component'
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'about', component: AboutPageComponent},
   { path: 'blog', component: BlogPageComponent},
-  { path: 'dashboard', component: DashboardPageComponent},
   { path: 'project', component: ProjectPageComponent},
-  { path: 'construction', component: ConstructionPageComponent},
+  { path: 'dashboard', component: DashboardPageComponent},
   { path: '**', component: NoPageComponent }
 ];
 
@@ -45,11 +44,11 @@ const appRoutes: Routes = [
     ProjectPageComponent,
     ElementBlockComponent,
     ElementContactComponent,
-    ConstructionPageComponent,
     ProjectCardComponent,
     BlogCardComponent,
     BlogCreateComponent,
-    DashboardPageComponent
+    DashboardPageComponent,
+    LoginPageComponent
   ],
   imports: [
     RouterModule.forRoot(
