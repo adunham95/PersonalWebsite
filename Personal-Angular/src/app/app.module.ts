@@ -23,7 +23,6 @@ import { ConstructionPageComponent } from './views/construction-page/constructio
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { BlogCardComponent } from './components/blog-card/blog-card.component';
 import { BlogCreateComponent } from './components/blog-create/blog-create.component';
-import { NewpostPageComponent } from './views/newpost-page/newpost-page.component';
 import {DashboardPageComponent} from "./views/dashboard-page/dashboard-page.component"
 
 const appRoutes: Routes = [
@@ -50,7 +49,6 @@ const appRoutes: Routes = [
     ProjectCardComponent,
     BlogCardComponent,
     BlogCreateComponent,
-    NewpostPageComponent,
     DashboardPageComponent
   ],
   imports: [
