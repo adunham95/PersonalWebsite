@@ -29,6 +29,7 @@ const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'about', component: AboutPageComponent},
   { path: 'blog', component: BlogPageComponent},
+  { path: 'login', component: LoginPageComponent},
   { path: 'project', component: ProjectPageComponent},
   { path: 'dashboard', component: DashboardPageComponent},
   { path: '**', component: NoPageComponent }
