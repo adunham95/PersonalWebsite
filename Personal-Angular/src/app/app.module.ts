@@ -8,7 +8,8 @@ import {FlashMessagesModule} from "angular2-flash-messages"
 //Routing
 import { RouterModule, Routes } from '@angular/router';
 //Services
-import {BlogService} from "./services/blog.service"
+import {BlogService} from "./services/blog.service";
+import {AuthService} from "./services/auth.service";
 
 //Components
 import { AppComponent } from './app.component';
@@ -62,7 +63,7 @@ const appRoutes: Routes = [
     FormsModule,
     FlashMessagesModule
   ],
-  providers: [BlogService],
+  providers: [BlogService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
