@@ -1,0 +1,28 @@
+<div class="navBar">
+  <div class="item" (click)="openNav()">{{title}} <span class="tricon"> &#9776;</span> </div>
+  <div id="navigation">
+    <div class="close" (click)="closeNav()">
+      &times;
+    </div>
+    <a routerLink="/" (click)="closeNav()" routerLinkActive="home" [routerLinkActiveOptions]="{ exact: true }">
+      <element-block name="H" color="#00A7E1" class="close"></element-block>
+      Home
+    </a>
+    <a routerLink="/about" (click)="closeNav()" routerLinkActive="about">
+      <element-block name="Am" color="#2B6240" class="close"></element-block>
+      About
+    </a>
+    <a routerLink="/project" (click)="closeNav()" routerLinkActive="projects">
+      <element-block name="Pr" color="#654597" class="close"></element-block>
+      Projects
+    </a>
+    <a routerLink="/blog" (click)="closeNav()" routerLinkActive="blog">
+      <element-block name="Bg" color="#7E6551" class="close"></element-block>
+      Blog
+    </a>
+    <a routerLink="/dashboard" *ngIf="!authService.loggedIn()" (click)="closeNav()" routerLinkActive="dashboard">
+      <element-block name="Db" color="#7E6551" class="close"></element-block>
+      Dashboard
+    </a>
+  </div>
+</div>

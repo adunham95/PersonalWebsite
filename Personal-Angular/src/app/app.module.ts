@@ -24,7 +24,8 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import { BlogCardComponent } from './components/blog-card/blog-card.component';
 import { BlogCreateComponent } from './components/blog-create/blog-create.component';
 import {DashboardPageComponent} from "./views/dashboard-page/dashboard-page.component";
-import { LoginPageComponent } from './views/login-page/login-page.component'
+import { LoginPageComponent } from './views/login-page/login-page.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component'
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -50,7 +51,8 @@ const appRoutes: Routes = [
     BlogCardComponent,
     BlogCreateComponent,
     DashboardPageComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    NavBarComponent
   ],
   imports: [
     RouterModule.forRoot(
