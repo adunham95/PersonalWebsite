@@ -18,12 +18,11 @@
     </div>
   </div>
 
-  <!--<div class="blog-container container">-->
-    <!--<element-block name="Bg" color="#7E6551" class="close"></element-block>-->
-    <!--<h1>Recent Posts</h1>-->
-    <!--<div class="blog">-->
-      <!--<h2>Coming Soon!</h2>-->
-      <!--&lt;!&ndash;<blog-card [blog]="item" *ngFor="let item of myBlog | slice:0:1; let i=index"></blog-card>&ndash;&gt;-->
-    <!--</div>-->
-  <!--</div>-->
+  <div class="blog-container container">
+    <element-block name="Bg" color="#7E6551" class="close"></element-block>
+    <div class="element-content">
+      <h1 class="title">Recent Posts</h1>
+    </div>
+      <div *ngFor="let item of myBlog | slice:0:1; let i=index">{{item.title}}</div>
+  </div>
 </div>
