@@ -20,9 +20,13 @@
       <element-block name="Bg" color="#7E6551" class="close"></element-block>
       Blog
     </a>
-    <a routerLink="/dashboard" *ngIf="!authService.loggedIn()" (click)="closeNav()" routerLinkActive="dashboard">
-      <element-block name="Db" color="#7E6551" class="close"></element-block>
+    <a routerLink="/dashboard" *ngIf="authService.loggedIn()" (click)="closeNav()" routerLinkActive="dashboard">
+      <element-block name="Db" color="#0000cc" class="close"></element-block>
       Dashboard
+    </a>
+    <a routerLink="/" *ngIf="authService.loggedIn()" (click)="onLogoutClick()">
+      <element-block name="Lg" color="#b32d00" class="close"></element-block>
+      Logout
     </a>
   </div>
 </div>

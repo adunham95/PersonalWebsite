@@ -8,6 +8,8 @@ import {AuthService} from "../../services/auth.service";
 })
 export class NavBarComponent implements OnInit {
 
+  title = 'Adrian Dunham';
+
   constructor(private authService: AuthService) { }
 
   ngOnInit() {
@@ -21,6 +23,11 @@ export class NavBarComponent implements OnInit {
   /* Close */
   closeNav() {
     document.getElementById("navigation").style.height = "0%";
+  }
+
+  onLogoutClick(){
+    document.getElementById("navigation").style.height = "0%";
+    this.authService.logout();
   }
 
 }

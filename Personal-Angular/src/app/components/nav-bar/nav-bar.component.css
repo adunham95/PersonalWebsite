@@ -34,7 +34,7 @@ a.blog {
 }
 
 a.dashboard {
-  background-color: #7E6551;
+  background-color: #0000cc;
 }
 
 .navBar{
@@ -66,6 +66,11 @@ a.dashboard {
     line-height: 25px;
     vertical-align: middle;
     height: 25px;
+  }
+
+  /*Hides the menu button on non mobile*/
+  .tricon {
+    display: none;
   }
 
 }

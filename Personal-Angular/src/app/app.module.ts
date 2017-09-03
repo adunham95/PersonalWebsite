@@ -10,6 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 //Services
 import {BlogService} from "./services/blog.service";
 import {AuthService} from "./services/auth.service";
+import {AuthGuard} from "./guards/auth.guard";
 
 //Components
 import { AppComponent } from './app.component';
@@ -33,7 +34,7 @@ const appRoutes: Routes = [
   { path: 'blog', component: BlogPageComponent},
   { path: 'login', component: LoginPageComponent},
   { path: 'project', component: ProjectPageComponent},
-  { path: 'dashboard', component: DashboardPageComponent},
+  { path: 'dashboard', component: DashboardPageComponent, canActivate: [AuthGuard]},
   { path: '**', component: NoPageComponent }
 ];
 
@@ -65,7 +66,7 @@ const appRoutes: Routes = [
     FormsModule,
     FlashMessagesModule
   ],
-  providers: [BlogService, AuthService],
+  providers: [BlogService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
