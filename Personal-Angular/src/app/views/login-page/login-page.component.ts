@@ -31,7 +31,7 @@ export class LoginPageComponent implements OnInit {
     this.authService.authenticateUser(user).subscribe(data => {
         if (data.success){
           this.flashMessage.show(data.msg, {timeout: 5000});
-          console.log(data);
+          this.authService.storeUserData(data.token, data.user);
           this.router.navigate(['dashboard']);
         }
         else {
