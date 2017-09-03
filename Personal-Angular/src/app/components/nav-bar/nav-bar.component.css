@@ -20,22 +20,28 @@ a {
   align-items: flex-end;
 }
 
-a.home {
+a.homeActive, .home:hover {
   background-color: #00A7E1;
 }
-a.about {
+a.aboutActive, .about:hover {
   background-color: #2B6240;
 }
-a.projects {
+a.projectsActive, .projects:hover {
   background-color: #654597;
 }
-a.blog {
+a.blogActive, .blog:hover {
   background-color: #7E6551;
 }
 
-a.dashboard {
+a.dashboard, .dashboard:hover {
   background-color: #0000cc;
 }
+
+.logout:hover {
+  background-color: #dd4b39;
+}
+
+
 
 .navBar{
   position: fixed;

@@ -4,27 +4,27 @@
     <div class="close" (click)="closeNav()">
       &times;
     </div>
-    <a routerLink="/" (click)="closeNav()" routerLinkActive="home" [routerLinkActiveOptions]="{ exact: true }">
+    <a routerLink="/" (click)="closeNav()" routerLinkActive="homeActive" [routerLinkActiveOptions]="{ exact: true }" class="home">
       <element-block name="H" color="#00A7E1" class="close"></element-block>
       Home
     </a>
-    <a routerLink="/about" (click)="closeNav()" routerLinkActive="about">
+    <a routerLink="/about" (click)="closeNav()" routerLinkActive="aboutActive" class="about">
       <element-block name="Am" color="#2B6240" class="close"></element-block>
       About
     </a>
-    <a routerLink="/project" (click)="closeNav()" routerLinkActive="projects">
+    <a routerLink="/project" (click)="closeNav()" routerLinkActive="projectsActive" class="projects">
       <element-block name="Pr" color="#654597" class="close"></element-block>
       Projects
     </a>
-    <a routerLink="/blog" (click)="closeNav()" routerLinkActive="blog">
+    <a routerLink="/blog" (click)="closeNav()" routerLinkActive="blogActive" class="blog">
       <element-block name="Bg" color="#7E6551" class="close"></element-block>
       Blog
     </a>
-    <a routerLink="/dashboard" *ngIf="authService.loggedIn()" (click)="closeNav()" routerLinkActive="dashboard">
+    <a routerLink="/dashboard" *ngIf="authService.loggedIn()" (click)="closeNav()" routerLinkActive="dashboardActive" class="dashboard">
       <element-block name="Db" color="#0000cc" class="close"></element-block>
       Dashboard
     </a>
-    <a routerLink="/" *ngIf="authService.loggedIn()" (click)="onLogoutClick()">
+    <a routerLink="/" *ngIf="authService.loggedIn()" (click)="onLogoutClick()" class="logout">
       <element-block name="Lg" color="#b32d00" class="close"></element-block>
       Logout
     </a>
