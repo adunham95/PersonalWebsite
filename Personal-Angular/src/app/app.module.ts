@@ -11,6 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {BlogService} from "./services/blog.service";
 import {AuthService} from "./services/auth.service";
 import {AuthGuard} from "./guards/auth.guard";
+import {ValidateService} from "./services/validate.service";
 
 //Components
 import { AppComponent } from './app.component';
@@ -66,7 +67,7 @@ const appRoutes: Routes = [
     FormsModule,
     FlashMessagesModule
   ],
-  providers: [BlogService, AuthService, AuthGuard],
+  providers: [BlogService, AuthService, AuthGuard, ValidateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
