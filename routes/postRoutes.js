@@ -3,7 +3,7 @@ const router = express.Router();
 const passport = require('passport');
 const jwt = require('jsonwebtoken');
 
-const Post = require('../models/post');
+const Post = require('../models/postModel');
 const config = require('../config/database');
 
 // Add blog post

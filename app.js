@@ -19,8 +19,8 @@ mongoose.connection.on('err', (err)=>{
 });
 
 const app = express();
-const posts = require('./routes/posts');
-const users = require('./routes/users');
+const posts = require('./routes/postRoutes');
+const users = require('./routes/userRoutes');
 
 // Port Number
 const port = process.env.PORT || 8080;

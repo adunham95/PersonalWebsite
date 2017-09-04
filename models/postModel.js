@@ -20,7 +20,8 @@ const PostSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  status: {
+  //Status of the post, in production or not
+  production: {
     type: Boolean,
     required: true
   }
