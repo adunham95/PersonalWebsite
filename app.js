@@ -20,6 +20,7 @@ mongoose.connection.on('err', (err)=>{
 
 const app = express();
 const posts = require('./routes/posts');
+const users = require('./routes/users');
 
 // Port Number
 const port = process.env.PORT || 8080;
@@ -35,14 +36,16 @@ app.use(bodyParser.json());
 
 
 app.use('/posts', posts);
+app.use('/users', users);
 
 // Index Route
 app.get('/', (req, res) =>{
-  res.send("Invaled End point")
+  res.send("Invalid End point")
 });
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/index.html'))
+  res.sendFile(path.join(__dirname, './public/index.html' +
+    ''))
 });
 
 // Start Server

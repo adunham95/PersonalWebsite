@@ -1,7 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+html {
+}
 
 body {
   margin: 0;
   background-color: #A2ABAB;
+}
+
+.alert-success {
+  background-color: darkgreen;
+  color: white;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.alert-error{
+  background-color: darkred;
+  color: white;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.alert{
+  padding: 5px;
+}
+
+div p{
+  margin: 0;
+
 }

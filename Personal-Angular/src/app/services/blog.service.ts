@@ -9,7 +9,7 @@ export class BlogService {
   isProd: boolean;
 
   constructor(private http: Http) {
-    this.isProd = true
+    this.isProd = false
   }
 
   getEndpoint(ep){

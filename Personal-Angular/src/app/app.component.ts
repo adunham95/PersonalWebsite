@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {AuthService} from "./services/auth.service";
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Adrian Dunham';
 
+  private auth: AuthService;
   /* Open */
   openNav() {
     document.getElementById("navigation").style.height = "100%";
@@ -16,12 +18,6 @@ export class AppComponent {
   /* Close */
   closeNav() {
     document.getElementById("navigation").style.height = "0%";
-  }
-
-  expand() {
-    console.log("Expanded");
-
-    document.getElementById('navigation').setAttribute("style", "height: 100%, visibility: visible");
   }
 
 }

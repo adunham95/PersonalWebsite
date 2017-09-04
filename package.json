@@ -8,6 +8,7 @@
     "start": "node app"
   },
   "dependencies": {
+    "angular2-jwt": "^0.1.28",
     "bcryptjs": "*",
     "body-parser": "*",
     "cors": "*",

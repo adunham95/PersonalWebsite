@@ -1,0 +1,43 @@
+<div class="main-content">
+  <div class="login">
+    <element-block name="Li" color="#228B22"></element-block>
+    <h2 class="header">Login page</h2>
+    <flash-messages></flash-messages>
+    <form (submit)="onLoginSubmit()">
+      <div class="form-group">
+        <label class="header">Username</label>
+        <input type="text" class="form-control" [(ngModel)]="username" name="username">
+      </div>
+      <div class="form-group">
+        <label class="header">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="password" name="password">
+      </div>
+      <input type="submit" class="button button-login" value="Login">
+    </form>
+  </div>
+
+  <div class="register">
+    <element-block name="Re" color="#"></element-block>
+    <h2 class="header">Register</h2>
+
+    <form (submit)="onRegisterUser()">
+      <div class="form-group">
+        <label class="header">Username</label>
+        <input type="text" class="form-control" [(ngModel)]="usernameRegister" name="username">
+      </div>
+      <div class="form-group">
+        <label class="header">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="passwordRegister" name="password">
+      </div>
+      <div class="form-group">
+        <label class="header">Name</label>
+        <input type="text" class="form-control" [(ngModel)]="nameRegister" name="password">
+      </div>
+      <div class="form-group">
+        <label class="header">Email</label>
+        <input type="text" class="form-control" [(ngModel)]="emailRegister" name="password">
+      </div>
+      <input type="submit" class="button button-register" value="Register">
+    </form>
+  </div>
+</div>
