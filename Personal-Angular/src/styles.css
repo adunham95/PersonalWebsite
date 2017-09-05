@@ -7,17 +7,21 @@ body {
 }
 
 .alert-success {
-  background-color: darkgreen;
+  background-color: lightgreen;
   color: white;
-  opacity: 0.8;
+  opacity: 0.7;
   border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .alert-error{
-  background-color: darkred;
+  background-color: #FE4042;
   color: white;
-  opacity: 0.8;
+  opacity: 0.7;
   border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .alert{
