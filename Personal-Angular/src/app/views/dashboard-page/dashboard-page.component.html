@@ -3,6 +3,7 @@
   <div class="dashNav">
     <a routerLink="/dashboard/" (click)="closeNav()" routerLinkActive="linkActive" [routerLinkActiveOptions]="{ exact: true }" class="link">Dashboard</a>
     <a routerLink="/dashboard/newpost" (click)="closeNav()" routerLinkActive="linkActive" class="link">New Post</a>
+    <a routerLink="/dashboard/editpost" (click)="closeNav()" routerLinkActive="linkActive" class="link">Edit Post</a>
   </div>
   <div class="dashView">
      <router-outlet></router-outlet>

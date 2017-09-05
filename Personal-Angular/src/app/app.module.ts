@@ -28,7 +28,9 @@ import { BlogCreateComponent } from './components/blog-create/blog-create.compon
 import {DashboardPageComponent} from "./views/dashboard-page/dashboard-page.component";
 import { LoginPageComponent } from './views/login-page/login-page.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { DashboardDisplayComponent } from './components/dashboard-display/dashboard-display.component'
+import { DashboardDisplayComponent } from './components/dashboard-display/dashboard-display.component';
+import { BlogEditComponent } from './components/blog-edit/blog-edit.component';
+import { TruncatePipe } from './pipes/truncate.pipe'
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -42,7 +44,8 @@ const appRoutes: Routes = [
     canActivate: [AuthGuard],
     children: [
       {path: '', component: DashboardDisplayComponent},
-      {path: 'newpost', component: BlogCreateComponent}
+      {path: 'newpost', component: BlogCreateComponent},
+      {path: 'editpost', component: BlogEditComponent},
     ]
   },
   { path: '**', component: NoPageComponent }
@@ -64,7 +67,9 @@ const appRoutes: Routes = [
     DashboardPageComponent,
     LoginPageComponent,
     NavBarComponent,
-    DashboardDisplayComponent
+    DashboardDisplayComponent,
+    BlogEditComponent,
+    TruncatePipe
   ],
   imports: [
     RouterModule.forRoot(

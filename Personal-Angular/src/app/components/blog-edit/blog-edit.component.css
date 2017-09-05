@@ -1,0 +1,15 @@
+.post-card {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}

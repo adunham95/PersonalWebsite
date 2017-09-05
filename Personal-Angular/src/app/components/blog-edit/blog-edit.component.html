@@ -1,0 +1,14 @@
+<div class="main-content">
+  <select [(ngModel)]="selectedPost">
+    <option *ngFor="let post of posts" [ngValue]="post">{{post.title}}</option>
+  </select>
+  <div *ngIf="selectedPost" class="post-card">
+    <h3>Edit {{selectedPost.title}}</h3>
+    <input [ngModel]="selectedPost.title">
+    <textarea [ngModel]="selectedPost.body"></textarea>
+    <div class="actions">
+      <button>Delete</button>
+      <button>Edit</button>
+    </div>
+  </div>
+</div>
