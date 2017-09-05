@@ -1,6 +1,5 @@
 .actions {
   display: flex;
-  width: 100%;
 }
 
 .link {
@@ -21,7 +20,6 @@ a:link {
 
 .blog-card {
   display: flex;
-  width: 100%;
 }
 
 @media screen and (min-width: 426px) {
