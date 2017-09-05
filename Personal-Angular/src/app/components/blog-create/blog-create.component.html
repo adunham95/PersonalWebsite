@@ -1,17 +1,21 @@
-<flash-messages></flash-messages>
-<h2 class="page-header">New Blog Post</h2>
-<form (submit)="newPostSubmit()">
-<div class="input-section left">
-<label>Title</label>
-<input type="text" [(ngModel)]="title" name="title" class="half">
+<div class="main-content">
+  <flash-messages></flash-messages>
+  <h2 class="page-header">New Blog Post</h2>
+  <form (submit)="newPostSubmit()">
+    <div class="input-section">
+      <label>Title</label>
+      <input type="text" [(ngModel)]="title" name="title" class="half">
+    </div>
+    <div class="input-section">
+      <label>Author</label>
+      <input type="text" [(ngModel)]="author" name="author" class="half">
+    </div>
+    <div class="input-section">
+      <label>Body</label>
+      <textarea rows="4" cols="50" [(ngModel)]="content" name="content"></textarea>
+    </div>
+    <div class="input-section">
+      <input type="submit" value="Add Post" class="submit-button">
+    </div>
+  </form>
 </div>
-<div class="input-section right">
-<label>Author</label>
-<input type="text" [(ngModel)]="author" name="author" class="half">
-</div>
-<div class="input-section">
-<label>Body</label>
-<textarea rows="4" cols="50" [(ngModel)]="content" name="content"></textarea>
-</div>
-<input type="submit" value="New Post" class="submit-button">
-</form>

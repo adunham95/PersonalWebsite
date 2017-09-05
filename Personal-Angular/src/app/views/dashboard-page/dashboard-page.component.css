@@ -63,6 +63,7 @@
   .dashNav {
     height: 40px;
     display: flex;
+    border-bottom: solid grey;
   }
 
   .link {

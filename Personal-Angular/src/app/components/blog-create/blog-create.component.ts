@@ -32,13 +32,13 @@ export class BlogCreateComponent implements OnInit {
 
     this.blogService.savePost(post).subscribe(data =>{
       if(data.success){
-        this.flashMessage.show(data.msg, {timeout: 5000});
+        this.flashMessage.show('This message has been added to drafts', {cssClass: 'alert-success', timeout: 5000});
         this.title = "";
         this.author = "";
         this.content = "";
       }
       else{
-        this.flashMessage.show(data.msg, {timeout: 5000})
+        this.flashMessage.show(data.msg, {cssClass: 'alert-error', timeout: 5000})
       }
     });
   }
