@@ -1,9 +1,11 @@
 /*@import url('https://fonts.googleapis.com/css?family=Ubuntu');*/
 
 .main-content {
-  padding: 20px;
+  padding-top: 10px;
   color: black;
   font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  height: 100%;
 }
 
 .actions {
@@ -23,4 +25,46 @@ button {
 
 .edit {
   background: orange;
+}
+
+.dashView {
+  background-color: lightblue;
+  height: auto;
+}
+
+.dashNav {
+  background-color: lightgreen;
+}
+
+@media screen and (min-width: 427px) {
+
+  .dashNav{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .dashNav-item {
+    width: auto;
+    background-color: transparent;
+    margin: 0;
+  }
+  .dashNav-item:hover{
+    background-color: #228B22;
+  }
+
+  .dashView{
+    width: 75%;
+    padding: 10px;
+  }
+
+}
+
+@media screen and (max-width: 426px) {
+
+  .main-content {
+    flex-direction: column;
+  }
+
 }

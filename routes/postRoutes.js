@@ -11,7 +11,9 @@ router.post('/savepost', (req, res, next) => {
   let newPost = new Post({
     title: req.body.title,
     author: req.body.author,
-    body: req.body.body
+    body: req.body.body,
+    date: new Date(),
+    production: false
   });
 
   Post.addPost(newPost, (err, post) =>{
