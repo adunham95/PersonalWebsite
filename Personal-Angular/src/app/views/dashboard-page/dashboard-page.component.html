@@ -1,8 +1,8 @@
 <div class="main-content">
 
   <div class="dashNav">
-    <a routerLink="/dashboard" (click)="closeNav()" routerLinkActive="dashboardActive">Dashboard</a>
-    <a routerLink="/dashboard/newpost" (click)="closeNav()" routerLinkActive="dashboardActive">New Post</a>
+    <a routerLink="/dashboard/" (click)="closeNav()" routerLinkActive="linkActive" [routerLinkActiveOptions]="{ exact: true }" class="link">Dashboard</a>
+    <a routerLink="/dashboard/newpost" (click)="closeNav()" routerLinkActive="linkActive" class="link">New Post</a>
   </div>
   <div class="dashView">
      <router-outlet></router-outlet>

@@ -8,32 +8,20 @@
   height: 100%;
 }
 
-.actions {
-  display: flex;
-}
-button {
-  width: 100%;
+/*.dashView {*/
+  /*background-color: lightblue;*/
+  /*height: auto;*/
+/*}*/
+
+/*.dashNav {*/
+  /*background-color: lightgreen;*/
+/*}*/
+
+.link {
+  text-decoration: none;
   color: white;
   border: none;
-  margin: 5px;
   padding: 10px;
-}
-
-.delete {
-  background: darkred;
-}
-
-.edit {
-  background: orange;
-}
-
-.dashView {
-  background-color: lightblue;
-  height: auto;
-}
-
-.dashNav {
-  background-color: lightgreen;
 }
 
 @media screen and (min-width: 427px) {
@@ -45,12 +33,12 @@ button {
     justify-content: space-around;
   }
 
-  .dashNav-item {
+  .link {
     width: auto;
-    background-color: transparent;
     margin: 0;
+    padding: 20px;
   }
-  .dashNav-item:hover{
+  .link:hover{
     background-color: #228B22;
   }
 
@@ -59,12 +47,29 @@ button {
     padding: 10px;
   }
 
+  .linkActive {
+    border-left: solid darkgreen 5px;
+    background-color: green;
+  }
 }
 
 @media screen and (max-width: 426px) {
 
   .main-content {
+    padding-top:19px;
     flex-direction: column;
   }
 
+  .dashNav {
+    height: 40px;
+    display: flex;
+  }
+
+  .link {
+    justify-content: flex-start;
+  }
+
+  .linkActive {
+    background-color: green;
+  }
 }
