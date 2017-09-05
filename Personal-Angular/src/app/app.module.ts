@@ -27,7 +27,8 @@ import { BlogCardComponent } from './components/blog-card/blog-card.component';
 import { BlogCreateComponent } from './components/blog-create/blog-create.component';
 import {DashboardPageComponent} from "./views/dashboard-page/dashboard-page.component";
 import { LoginPageComponent } from './views/login-page/login-page.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component'
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { DashboardDisplayComponent } from './components/dashboard-display/dashboard-display.component'
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -35,7 +36,15 @@ const appRoutes: Routes = [
   { path: 'blog', component: BlogPageComponent},
   { path: 'login', component: LoginPageComponent},
   { path: 'project', component: ProjectPageComponent},
-  { path: 'dashboard', component: DashboardPageComponent, canActivate: [AuthGuard]},
+  {
+    path: 'dashboard',
+    component: DashboardPageComponent,
+    canActivate: [AuthGuard],
+    children: [
+      {path: '', component: DashboardDisplayComponent},
+      {path: 'newpost', component: BlogCreateComponent}
+    ]
+  },
   { path: '**', component: NoPageComponent }
 ];
 
@@ -54,7 +63,8 @@ const appRoutes: Routes = [
     BlogCreateComponent,
     DashboardPageComponent,
     LoginPageComponent,
-    NavBarComponent
+    NavBarComponent,
+    DashboardDisplayComponent
   ],
   imports: [
     RouterModule.forRoot(
