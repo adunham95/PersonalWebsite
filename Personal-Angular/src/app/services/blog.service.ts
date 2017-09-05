@@ -28,10 +28,18 @@ export class BlogService {
     return this.http.post(endPoint, post, {headers: headers}).map(res => res.json())
   }
 
-  getPosts(){
+  getAllPosts(){
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    let endPoint = this.getEndpoint('posts/getposts');
+    let endPoint = this.getEndpoint('posts/getposts/all');
+    return this.http.get(endPoint, {headers: headers}).map(res => res.json())
+  }
+
+
+  getPublishedPosts(){
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    let endPoint = this.getEndpoint('posts/getposts/published');
     return this.http.get(endPoint, {headers: headers}).map(res => res.json())
   }
 
