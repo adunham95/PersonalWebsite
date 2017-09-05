@@ -13,7 +13,7 @@ export class BlogPageComponent implements OnInit {
   constructor(private blogService: BlogService) { }
 
   ngOnInit() {
-    this.blogService.getPosts().subscribe(posts =>{
+    this.blogService.getPublishedPosts().subscribe(posts =>{
       console.log(posts);
       this.posts = posts.posts.reverse();
       console.log(this.posts)

@@ -20,7 +20,7 @@ export class HomePageComponent implements OnInit {
   }
 
   getMyBlog() {
-    this.blogService.getPosts().subscribe(posts =>{
+    this.blogService.getPublishedPosts().subscribe(posts =>{
       console.log(posts);
       this.myBlog = posts.posts;
       console.log(this.myBlog)
