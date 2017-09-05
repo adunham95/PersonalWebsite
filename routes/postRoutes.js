@@ -26,8 +26,23 @@ router.post('/savepost', (req, res, next) => {
   })
 });
 
-router.get('/getposts', (req, res, next) => {
+
+router.get('/getposts/all', (req, res, next) => {
   Post.getAllPosts((err, post) => {
+    if (err){
+      res.json({success: false, msg: "Error retrieving posts"});
+    }
+    if (post){
+      res.json({posts: post})
+    }
+    else{
+      res.json({success: false, msg: "Failed to retrieve posts"});
+    }
+  })
+});
+
+router.get('/getposts/published', (req, res, next) => {
+  Post.getPublishedPosts((err, post) => {
     if (err){
       res.json({success: false, msg: "Error retrieving posts"});
     }

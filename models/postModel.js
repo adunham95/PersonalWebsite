@@ -37,6 +37,10 @@ module.exports.getAllPosts = function (callback) {
   Post.find(callback);
 };
 
+module.exports.getPublishedPosts = function (callback) {
+  Post.find({published: true}, callback);
+};
+
 
 module.exports.addPost = function (newPost, callback) {
   newPost.save(callback);
