@@ -18,7 +18,7 @@ router.post('/savepost', (req, res, next) => {
 
   Post.addPost(newPost, (err, post) =>{
     if(err){
-      res.json({success: false, msg: "Failed to register user"})
+      res.json({success: false, msg: "Failed to add blog post"})
     }
     else {
       res.json({success: true, msg: "Saved post"})
