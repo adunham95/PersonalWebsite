@@ -11,7 +11,7 @@ export class AuthService {
   isProd: boolean;
 
   constructor(private http: Http) {
-    this.isProd = false
+    this.isProd = true
   }
 
   getEndpoint(ep){
