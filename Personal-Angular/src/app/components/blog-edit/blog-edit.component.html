@@ -11,7 +11,7 @@
       <input type="checkbox" [(ngModel)]="selectedPost.production">
     </div>
     <label class="post-card-item">Blog Body</label>
-    <textarea [(ngModel)]="selectedPost.body" class="post-card-item"></textarea>
+    <textarea style="height: 100px"  [(ngModel)]="selectedPost.body" class="post-card-item"></textarea>
     <div class="actions post-card-item">
       <button (click)="delete(selectedPost._id)">Delete</button>
       <button (click)="update()">Update</button>
