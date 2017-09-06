@@ -38,7 +38,7 @@ module.exports.getAllPosts = function (callback) {
 };
 
 module.exports.getPublishedPosts = function (callback) {
-  Post.find({published: true}, callback);
+  Post.find({production: true}, callback);
 };
 
 

@@ -73,6 +73,17 @@ router.post('/updatepost', (req, res, next) => {
   let production = req.body.production;
   let body = req.body.body;
 
+  Post.updatePost(id, title, production, body, (err, posts) => {
+    if (err) {
+      res.json({success: false, msg: "Error Updating Post " + err});
+    }
+    if (posts) {
+      res.json({success: true, msg: 'Updated Post', posts: posts});
+    }
+    else {
+      res.json({success: false, msg: "Failed to update post"});
+    }
+  })
 
 });
 
