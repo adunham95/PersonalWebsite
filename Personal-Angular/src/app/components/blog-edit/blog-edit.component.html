@@ -3,16 +3,18 @@
     <option *ngFor="let post of posts" [ngValue]="post">{{post.title}}</option>
   </select>
   <div *ngIf="selectedPost" class="post-card">
-    <h3>Edit {{selectedPost.title}}</h3>
-    <input [(ngModel)]="selectedPost.title">
-    <div>
+    <h3 class="post-card-item">Edit {{selectedPost.title}}</h3>
+    <label class="post-card-item">Title</label>
+    <input [(ngModel)]="selectedPost.title" class="post-card-item">
+    <div class="post-card-item">
       <label>In Production</label>
       <input type="checkbox" [(ngModel)]="selectedPost.production">
     </div>
-    <textarea [(ngModel)]="selectedPost.body"></textarea>
-    <div class="actions">
+    <label class="post-card-item">Blog Body</label>
+    <textarea [(ngModel)]="selectedPost.body" class="post-card-item"></textarea>
+    <div class="actions post-card-item">
       <button (click)="delete(selectedPost._id)">Delete</button>
-      <button (click)="update()">Edit</button>
+      <button (click)="update()">Update</button>
     </div>
   </div>
 </div>

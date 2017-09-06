@@ -13,3 +13,7 @@
 h1, h2, h3 {
   margin: 0;
 }
+
+.post-card-item {
+  padding: 5px 0;
+}
