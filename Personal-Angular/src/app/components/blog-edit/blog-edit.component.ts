@@ -24,5 +24,22 @@ export class BlogEditComponent implements OnInit {
     });
   }
 
+  delete(id){
+    this.blogService.deletePosts(id).subscribe(data =>{
+      if (data.success){
+        console.log(data.msg)
+      }
+      else {
+        console.log(data.msg)
+      }
+    })
+  }
+
+  update(){
+    console.log(this.selectedPost);
+    this.blogService.updatePost(this.selectedPost._id, this.selectedPost.title, this.selectedPost.production, this.selectedPost.body).subscribe(data =>{
+      console.log(data)
+    });
+  }
 
 }

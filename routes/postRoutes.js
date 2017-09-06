@@ -67,4 +67,13 @@ router.post('/deletepost', (req, res, next) => {
     }))
 });
 
+router.post('/updatepost', (req, res, next) => {
+  let id = req.body.id;
+  let title = req.body.title;
+  let production = req.body.production;
+  let body = req.body.body;
+
+
+});
+
 module.exports = router;

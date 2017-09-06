@@ -4,11 +4,15 @@
   </select>
   <div *ngIf="selectedPost" class="post-card">
     <h3>Edit {{selectedPost.title}}</h3>
-    <input [ngModel]="selectedPost.title">
-    <textarea [ngModel]="selectedPost.body"></textarea>
+    <input [(ngModel)]="selectedPost.title">
+    <div>
+      <label>In Production</label>
+      <input type="checkbox" [(ngModel)]="selectedPost.production">
+    </div>
+    <textarea [(ngModel)]="selectedPost.body"></textarea>
     <div class="actions">
-      <button>Delete</button>
-      <button>Edit</button>
+      <button (click)="delete(selectedPost._id)">Delete</button>
+      <button (click)="update()">Edit</button>
     </div>
   </div>
 </div>

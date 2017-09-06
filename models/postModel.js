@@ -50,3 +50,7 @@ module.exports.deleteSinglePost = function (id, callback) {
   Post.deleteOne({ _id: id }, callback)
 };
 
+module.exports.updatePost = function (id, title, production, body, callback) {
+  Post.where({_id: id}).update({title: title, production: production, body: body}, callback);
+};
+

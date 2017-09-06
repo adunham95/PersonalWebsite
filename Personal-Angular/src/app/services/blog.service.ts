@@ -50,5 +50,11 @@ export class BlogService {
     return this.http.post(endPoint, {_id: id}, {headers: headers}).map(res => res.json())
   }
 
+  updatePost(id, title, isProduction, body){
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    let endPoint = this.getEndpoint('posts/updatepost');
+    return this.http.post(endPoint, {id: id, title: title, production: isProduction, body: body}, {headers: headers}).map(res => res.json())
+  }
 
 }
