@@ -8,10 +8,13 @@ const config = require('../config/database');
 router.post('/savepost', (req, res, next) => {
   let newProject = new Project({
     name: req.body.name,
-    position: req.body.position,
+    role: req.body.role,
+    dateComplete: req.body.dateComplete,
     description: req.body.description,
     githubURL: req.body.githubURL,
-    projectURL: req.body.projectURL
+    projectURL: req.body.projectURL,
+    imageURL: req.body.imageURL,
+    technology: req.body.technology
   });
 
   Project.addPost(newProject, (err, post) =>{

@@ -194,24 +194,4 @@ export class ResumeService {
     return this.resume;
   }
 
-  getBlog() {
-    this.blog =[
-      {
-        "id": 1,
-        "title": "What I learned in a year",
-        "author": "Adrian Dunham",
-        "date": "TBD 2017",
-        "content": "I have some text here"
-      },
-      {
-        "id": 2,
-        "title": "Why I do this",
-        "author": "Adrian Dunham",
-        "date": "August 8 2017",
-        "content": "I have some text here"
-      }
-    ];
-    return this.blog
-  }
-
 }

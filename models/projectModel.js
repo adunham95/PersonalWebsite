@@ -8,7 +8,11 @@ const ProjectSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  position: {
+  role: {
+    type: String,
+    required: true
+  },
+  dateComplete: {
     type: String,
     required: true
   },
@@ -23,7 +27,15 @@ const ProjectSchema = mongoose.Schema({
   projectURL: {
     type: String,
     required: true
+  },
+  imageURL: {
+    type: String,
+  },
+  technology: {
+    type: Array,
+    required: true
   }
+
 });
 
 const Project = module.exports = mongoose.model('Project', ProjectSchema);
