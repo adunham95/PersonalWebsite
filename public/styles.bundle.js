@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "html {\r\n}\r\n\r\nbody {\r\n  margin: 0;\r\n  background-color: #A2ABAB;\r\n}\r\n\r\n.alert-success {\r\n  background-color: lightgreen;\r\n  color: white;\r\n  opacity: 0.7;\r\n  border-radius: 5px;\r\n  text-align: center;\r\n  font-size: 20px;\r\n}\r\n\r\n.alert-error{\r\n  background-color: #FE4042;\r\n  color: white;\r\n  opacity: 0.7;\r\n  border-radius: 5px;\r\n  text-align: center;\r\n  font-size: 20px;\r\n}\r\n\r\n.alert{\r\n  padding: 5px;\r\n}\r\n\r\ndiv p{\r\n  margin: 0;\r\n\r\n}\r\n", ""]);
+exports.push([module.i, "html {\r\n}\r\n\r\nbody {\r\n  margin: 0;\r\n  background-color: #A2ABAB;\r\n}\r\n\r\n.alert-success {\r\n  background-color: lightgreen;\r\n  color: white;\r\n  opacity: 0.7;\r\n  border-radius: 5px;\r\n  text-align: center;\r\n  font-size: 20px;\r\n}\r\n\r\n.alert-error{\r\n  background-color: #FE4042;\r\n  color: white;\r\n  opacity: 0.7;\r\n  border-radius: 5px;\r\n  text-align: center;\r\n  font-size: 20px;\r\n}\r\n\r\n.alert{\r\n  padding: 5px;\r\n}\r\n\r\ndiv p{\r\n  margin: 0;\r\n}\r\n\r\ntextarea, input, select {\r\n  font-family: inherit;\r\n  font-size: inherit;\r\n}\r\n", ""]);
 
 // exports
 

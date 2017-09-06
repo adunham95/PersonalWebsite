@@ -21,19 +21,6 @@ h1, h2 {
   background-color: #2B6240;
 }
 
-.alert-success {
-  background-color: lightgreen;
-  border-radius: 5px;
-  width: 100%;
-}
-
-
-.alert-error {
-  background-color: lightcoral;
-  border-radius: 5px;
-  width: 100%;
-}
-
 @media screen and (min-width: 426px) {
   .submit-button {
     width: 25%;
