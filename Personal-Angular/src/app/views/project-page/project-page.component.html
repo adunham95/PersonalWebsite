@@ -6,6 +6,8 @@
     <div class="element-content">
       <h1 class="title">Projects</h1>
 
+      <project-card [project]="project" *ngFor="let project of myProjects"></project-card>
+
       <project-card [project]="item" *ngFor="let item of myResume.projects"></project-card>
 
     </div>
