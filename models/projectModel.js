@@ -25,8 +25,7 @@ const ProjectSchema = mongoose.Schema({
     required: true
   },
   projectURL: {
-    type: String,
-    required: true
+    type: String
   },
   imageURL: {
     type: String,
@@ -44,20 +43,20 @@ module.exports.getPostById = function (id, callback) {
   Project.findById(id, callback);
 };
 
-module.exports.getAllPosts = function (callback) {
+module.exports.getAllProjects = function (callback) {
   Project.find(callback);
 };
 
 
-module.exports.addPost = function (newProject, callback) {
+module.exports.addProject = function (newProject, callback) {
   newProject.save(callback);
 };
 
-module.exports.deleteSinglePost = function (id, callback) {
+module.exports.deleteSingleProject = function (id, callback) {
   Project.deleteOne({ _id: id }, callback)
 };
 
-module.exports.updateProject = function (id, callback) {
-  Project.where({_id: userID}).update({active: userStatus, location: userLocation}, callback);
+module.exports.updateProject = function (projectID, callback) {
+  Project.where({_id: projectID}).update({}, callback);
 };
 

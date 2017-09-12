@@ -4,11 +4,19 @@ import { Injectable } from '@angular/core';
 export class ResumeService {
 
   resume;
-  blog;
-
+  isProd: boolean;
   constructor() {
-
+    this.isProd = false
   }
+
+  getEndpoint(ep){
+    if(this.isProd){
+      return ep
+    }
+    else {
+      return 'http://localhost:8080/'+ep
+    }
+  };
 
   getResume(){
     this.resume = {
@@ -192,6 +200,12 @@ export class ResumeService {
       ],
     };
     return this.resume;
+  }
+
+  saveProject(project){
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    let endPoint = this.getEndpoint('projects/saveproject');
   }
 
 }
