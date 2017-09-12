@@ -1,0 +1,49 @@
+<div class="main-content">
+  <flash-messages></flash-messages>
+  <h2 class="page-header">New Project</h2>
+  <form (submit)="newPostSubmit()">
+    <div class="input-section">
+      <label>Project Name</label>
+      <input type="text" [(ngModel)]="name" name="name" class="half">
+    </div>
+    <div class="input-section">
+      <label>Role</label>
+      <input type="text" [(ngModel)]="role" name="role" class="half">
+    </div>
+    <div class="input-section">
+      <label>Project Released</label>
+      <input type="month" [(ngModel)]="releaseDate" name="releaseDate" class="half">
+    </div>
+    <div class="input-section">
+      <label>Description</label>
+      <textarea style="height: 100px" [(ngModel)]="content" name="content"></textarea>
+    </div>
+    <div class="input-section">
+      <label>Github URL</label>
+      <input type="url" [(ngModel)]="githubURL" name="githubURL" class="half">
+    </div>
+    <div class="input-section">
+      <label>Project URL</label>
+      <input type="url" [(ngModel)]="projectURL" name="projectURL" class="half">
+    </div>
+    <div class="input-section">
+      <label>Project</label>
+      <input type="text" [(ngModel)]="technology" name="technology" class="half">
+    </div>
+
+    <div class="input-section">
+      <input type="submit" value="Add Project" class="submit-button">
+    </div>
+  </form>
+</div>
+
+
+<!--name: req.body.name,-->
+<!--role: req.body.role,-->
+<!--dateComplete: req.body.dateComplete,-->
+<!--description: req.body.description,-->
+<!--githubURL: req.body.githubURL,-->
+<!--projectURL: req.body.projectURL,-->
+<!--imageURL: req.body.imageURL,-->
+<!--technology: req.body.technology-->
+

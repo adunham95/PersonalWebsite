@@ -30,7 +30,8 @@ import { LoginPageComponent } from './views/login-page/login-page.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { DashboardDisplayComponent } from './components/dashboard-display/dashboard-display.component';
 import { BlogEditComponent } from './components/blog-edit/blog-edit.component';
-import { TruncatePipe } from './pipes/truncate.pipe'
+import { TruncatePipe } from './pipes/truncate.pipe';
+import { ProjectCreateComponent } from './components/project-create/project-create.component'
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -46,6 +47,7 @@ const appRoutes: Routes = [
       {path: '', component: DashboardDisplayComponent},
       {path: 'newpost', component: BlogCreateComponent},
       {path: 'editpost', component: BlogEditComponent},
+      {path: 'newproject', component: ProjectCreateComponent},
     ]
   },
   { path: '**', component: NoPageComponent }
@@ -69,7 +71,8 @@ const appRoutes: Routes = [
     NavBarComponent,
     DashboardDisplayComponent,
     BlogEditComponent,
-    TruncatePipe
+    TruncatePipe,
+    ProjectCreateComponent
   ],
   imports: [
     RouterModule.forRoot(
