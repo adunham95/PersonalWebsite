@@ -7,19 +7,25 @@
   </p>
 
 
-  <div class="project-container container">
-    <element-block name="Pr" color="#654597"></element-block>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Section</h1>
+      <h2 class="subtitle">
+        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+      </h2>
+    </div>
+  </section>
 
-    <div class="element-content">
+  <section class="section">
+    <div class="project-container container">
       <h1 class="title">Latest Project</h1>
 
       <project-card [project]="project" *ngFor="let project of myProject | slice:0:1; let i=index"></project-card>
-
     </div>
-  </div>
+  </section>
 
   <div class="blog-container container">
-    <element-block name="Bg" color="#7E6551" class="close"></element-block>
+    <!--<element-block name="Bg" color="#7E6551" class="close"></element-block>-->
     <div class="element-content">
       <h1 class="title">Recent Posts</h1>
     </div>
