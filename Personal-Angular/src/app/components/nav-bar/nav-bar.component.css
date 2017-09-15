@@ -57,11 +57,11 @@ a.dashboardActive, .dashboard:hover {
 
 @media screen and (min-width: 426px) {
 
-  a, .item {
-    line-height: 25px;
-    vertical-align: middle;
-    height: 25px;
-  }
+  /*a, .item {*/
+    /*line-height: 25px;*/
+    /*vertical-align: middle;*/
+    /*height: 25px;*/
+  /*}*/
 
   /*Hides the menu button on non mobile*/
   .tricon {
