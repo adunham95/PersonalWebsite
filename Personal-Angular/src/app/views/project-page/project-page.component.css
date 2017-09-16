@@ -3,19 +3,21 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-.container {
-  display: flex;
-  width: 100%;
-}
-
-.element-content {
-  width: 100%;
-}
+/*.container {*/
+  /*display: flex;*/
+/*}*/
 
 @media screen and (min-width: 426px) {
 
   h1.title {
-    margin: 33px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .project-card {
+    margin: 0 10px;
   }
 }
 
@@ -32,4 +34,5 @@
     text-align: center;
     margin: 10px;
   }
+
 }

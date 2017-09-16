@@ -5,9 +5,9 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-.container {
-  display: flex;
-}
+/*.container {*/
+  /*display: flex;*/
+/*}*/
 
 .element {
   height: 100px;
@@ -55,9 +55,9 @@
 
 @media screen and (max-width: 426px) {
 
-  h1.title {
-    margin: 33px 10px;
-  }
+  /*h1.title {*/
+    /*margin: 33px 10px;*/
+  /*}*/
 
 }
 
