@@ -17,11 +17,11 @@
     </div>
   </section>
 
-  <div class="blog-container container">
-    <!--<element-block name="Bg" color="#7E6551" class="close"></element-block>-->
-    <div class="element-content">
+  <section class="section">
+    <div class="blog-container container">
       <h1 class="title">Recent Posts</h1>
-    </div>
+
       <div *ngFor="let item of myBlog | slice:0:1; let i=index">{{item.title}}</div>
-  </div>
+    </div>
+  </section>
 </div>
