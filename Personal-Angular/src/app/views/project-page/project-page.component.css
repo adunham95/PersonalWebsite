@@ -1,5 +1,4 @@
 .main-content {
-  padding: 20px;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -22,17 +21,17 @@
 }
 
 @media screen and (max-width: 426px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .element-content {
-    margin: 0;
-  }
 
   .title {
     text-align: center;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    margin: 0 10px;
   }
 
 }
