@@ -45,9 +45,7 @@ const appRoutes: Routes = [
     canActivate: [AuthGuard],
     children: [
       {path: '', component: DashboardDisplayComponent},
-      {path: 'newpost', component: BlogCreateComponent},
       {path: 'editpost', component: BlogEditComponent},
-      {path: 'newproject', component: ProjectCreateComponent},
     ]
   },
   { path: '**', component: NoPageComponent }

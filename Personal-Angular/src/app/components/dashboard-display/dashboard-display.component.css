@@ -1,0 +1,11 @@
+.section {
+  display: flex;
+}
+
+.main{
+  flex-grow: 3;
+}
+
+.sidePanel {
+  flex-grow: 1;
+}

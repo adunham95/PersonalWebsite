@@ -1,50 +1,7 @@
 <div class="main-content">
-
   <div class="dashNav">
-    <aside class="menu">
-      <ul class="menu-list">
-        <li><a routerLink="/dashboard/" (click)="closeNav()" routerLinkActive="linkActive" [routerLinkActiveOptions]="{ exact: true }" class="link">Dashboard</a></li>
-        <li><a routerLink="/dashboard/newpost" (click)="closeNav()" routerLinkActive="linkActive" class="link">New Post</a></li>
-        <li><a routerLink="/dashboard/editpost" (click)="closeNav()" routerLinkActive="linkActive" class="link">Edit Post</a></li>
-        <li><a routerLink="/dashboard/newproject" (click)="closeNav()" routerLinkActive="linkActive" class="link">New Project</a></li>
-      </ul>
-      <!--<p class="menu-label">-->
-        <!--General-->
-      <!--</p>-->
-      <!--<ul class="menu-list">-->
-        <!--<li><a>Dashboard</a></li>-->
-        <!--<li><a>Customers</a></li>-->
-      <!--</ul>-->
-      <!--<p class="menu-label">-->
-        <!--Administration-->
-      <!--</p>-->
-      <!--<ul class="menu-list">-->
-        <!--<li><a>Team Settings</a></li>-->
-        <!--<li>-->
-          <!--<a class="is-active">Manage Your Team</a>-->
-          <!--<ul>-->
-            <!--<li><a>Members</a></li>-->
-            <!--<li><a>Plugins</a></li>-->
-            <!--<li><a>Add a member</a></li>-->
-          <!--</ul>-->
-        <!--</li>-->
-        <!--<li><a>Invitations</a></li>-->
-        <!--<li><a>Cloud Storage Environment Settings</a></li>-->
-        <!--<li><a>Authentication</a></li>-->
-      <!--</ul>-->
-      <!--<p class="menu-label">-->
-        <!--Transactions-->
-      <!--</p>-->
-      <!--<ul class="menu-list">-->
-        <!--<li><a>Payments</a></li>-->
-        <!--<li><a>Transfers</a></li>-->
-        <!--<li><a>Balance</a></li>-->
-      <!--</ul>-->
-    </aside>
-    <!--<a routerLink="/dashboard/" (click)="closeNav()" routerLinkActive="linkActive" [routerLinkActiveOptions]="{ exact: true }" class="link">Dashboard</a>-->
-    <!--<a routerLink="/dashboard/newpost" (click)="closeNav()" routerLinkActive="linkActive" class="link">New Post</a>-->
-    <!--<a routerLink="/dashboard/editpost" (click)="closeNav()" routerLinkActive="linkActive" class="link">Edit Post</a>-->
-    <!--<a routerLink="/dashboard/newproject" (click)="closeNav()" routerLinkActive="linkActive" class="link">New Project</a>-->
+    <a routerLink="/dashboard/" (click)="closeNav()" routerLinkActive="linkActive" [routerLinkActiveOptions]="{ exact: true }" class="link">Dashboard</a>
+    <a routerLink="/dashboard/editpost" (click)="closeNav()" routerLinkActive="linkActive" class="link">Edit Post</a>
   </div>
   <div class="dashView">
      <router-outlet></router-outlet>
