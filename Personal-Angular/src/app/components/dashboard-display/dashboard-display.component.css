@@ -9,3 +9,21 @@
 .sidePanel {
   flex-grow: 1;
 }
+
+@media screen and (min-width: 426px) {
+
+}
+
+@media screen and (max-width: 426px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .sidePanel {
+    order: 0;
+  }
+
+  .main{
+    order: 1;
+  }
+}

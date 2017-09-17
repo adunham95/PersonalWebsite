@@ -1,0 +1,38 @@
+.main-content{
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+h1, h2 {
+  margin: 5px;
+}
+.submit-button{
+  border: none;
+  background-color: #228B22;
+  color: white;
+  padding: 10px;
+}
+.submit-button:hover{
+  background-color: #2B6240;
+}
+
+@media screen and (min-width: 426px) {
+  .submit-button {
+    width: 25%;
+    align-self: flex-end;
+  }
+
+  h2.page-header {
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  h2.page-header {
+    margin: 2px;
+  }
+}

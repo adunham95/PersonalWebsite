@@ -1,5 +1,4 @@
 .main-content{
-  padding: 20px;
 }
 
 .input-section {
@@ -26,7 +25,14 @@ h1, h2 {
     width: 25%;
     align-self: flex-end;
   }
+
+  h2.page-header {
+    margin: 5px 0;
+  }
 }
 
 @media screen and (max-width: 426px) {
+  h2.page-header {
+    margin: 2px;
+  }
 }
