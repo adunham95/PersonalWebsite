@@ -12,6 +12,7 @@ import {BlogService} from "./services/blog.service";
 import {AuthService} from "./services/auth.service";
 import {AuthGuard} from "./guards/auth.guard";
 import {ValidateService} from "./services/validate.service";
+import {ResumeService} from "./services/resume.service";
 
 //Components
 import { AppComponent } from './app.component';
@@ -31,7 +32,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { DashboardDisplayComponent } from './components/dashboard-display/dashboard-display.component';
 import { BlogEditComponent } from './components/blog-edit/blog-edit.component';
 import { TruncatePipe } from './pipes/truncate.pipe';
-import { ProjectCreateComponent } from './components/project-create/project-create.component'
+import { ProjectCreateComponent } from './components/project-create/project-create.component';
+import { ProjectEditComponent } from './components/project-edit/project-edit.component'
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -46,6 +48,7 @@ const appRoutes: Routes = [
     children: [
       {path: '', component: DashboardDisplayComponent},
       {path: 'editpost', component: BlogEditComponent},
+      {path: 'editproject', component: ProjectEditComponent},
     ]
   },
   { path: '**', component: NoPageComponent }
@@ -70,7 +73,8 @@ const appRoutes: Routes = [
     DashboardDisplayComponent,
     BlogEditComponent,
     TruncatePipe,
-    ProjectCreateComponent
+    ProjectCreateComponent,
+    ProjectEditComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -83,7 +87,7 @@ const appRoutes: Routes = [
     FormsModule,
     FlashMessagesModule
   ],
-  providers: [BlogService, AuthService, AuthGuard, ValidateService],
+  providers: [BlogService, AuthService, AuthGuard, ValidateService, ResumeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
