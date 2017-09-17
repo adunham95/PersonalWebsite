@@ -1,16 +1,14 @@
 <div class="main-content">
 
-  <div class="container">
-    <element-block name="Pr" color="#654597"></element-block>
+  <section class="section">
+    <div class="project-container container">
+      <h1 class="title"> <element-block name="Pr" color="#654597"></element-block> Projects <span></span></h1>
 
-    <div class="element-content">
-      <h1 class="title">Projects</h1>
+      <project-card [project]="project" *ngFor="let project of myProjects" class="project-card"></project-card>
 
-      <project-card [project]="item" *ngFor="let item of myResume.projects"></project-card>
-
+      <project-card [project]="item" *ngFor="let item of myResume.projects" class="project-card"></project-card>
     </div>
-  </div>
-
+  </section>
 
  <element-contact></element-contact>
 

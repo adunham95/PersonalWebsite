@@ -1,35 +1,37 @@
 .main-content {
-  padding: 20px;
   font-family: 'Ubuntu', sans-serif;
 }
 
-.container {
-  display: flex;
-  width: 100%;
-}
-
-.element-content {
-  width: 100%;
-}
+/*.container {*/
+  /*display: flex;*/
+/*}*/
 
 @media screen and (min-width: 426px) {
 
   h1.title {
-    margin: 33px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .project-card {
+    margin: 0 10px;
   }
 }
 
 @media screen and (max-width: 426px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .element-content {
-    margin: 0;
-  }
 
   .title {
     text-align: center;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .project-card {
+    margin: 0 10px;
+  }
+
 }

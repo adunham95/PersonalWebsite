@@ -21,6 +21,7 @@ mongoose.connection.on('err', (err)=>{
 const app = express();
 const posts = require('./routes/postRoutes');
 const users = require('./routes/userRoutes');
+const projects = require('./routes/projectRoutes');
 
 // Port Number
 const port = process.env.PORT || 8080;
@@ -37,6 +38,7 @@ app.use(bodyParser.json());
 
 app.use('/posts', posts);
 app.use('/users', users);
+app.use('/projects', projects);
 
 // Index Route
 app.get('/', (req, res) =>{

@@ -10,16 +10,29 @@ import {ResumeService} from "../../services/resume.service";
 export class ProjectPageComponent implements OnInit {
 
   myResume;
+  myProjects;
 
-  constructor(private resume: ResumeService) { }
+  constructor(private resume: ResumeService) {
+  }
+
+  ngOnInit() {
+    this.getMyResume();
+    this.getMyProjects();
+  }
+
 
   getMyResume() {
     console.log('Running getMyResume');
     this.myResume = this.resume.getResume()
   }
 
-  ngOnInit() {
-    this.getMyResume()
+  getMyProjects(){
+    this.resume.getAllProjects().subscribe(projects =>{
+      this.myProjects = projects.projects.reverse();
+      console.log(this.myProjects)
+    }, err =>{
+      console.log(err);
+      return false
+    })
   }
-
 }

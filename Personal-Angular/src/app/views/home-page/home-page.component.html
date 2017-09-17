@@ -1,28 +1,27 @@
 <div class="main-content">
 
-  <h1>{{ myResume.about.tagLine}}</h1>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Adrian Dunham | I am a developer</h1>
+      <h2 class="subtitle">
+        Currently I am job searching for a Front End Developer position.
+      </h2>
+    </div>
+  </section>
 
-  <p>
-    Currently I am job searching for a Front End Developer position.
-  </p>
-
-
-  <div class="project-container container">
-    <element-block name="Pr" color="#654597"></element-block>
-
-    <div class="element-content">
+  <section class="section">
+    <div class="project-container container">
       <h1 class="title">Latest Project</h1>
 
-      <project-card [project]="item" *ngFor="let item of myResume.projects | slice:0:1; let i=index"></project-card>
-
+      <project-card [project]="project" *ngFor="let project of myProject | slice:0:1; let i=index"></project-card>
     </div>
-  </div>
+  </section>
 
-  <div class="blog-container container">
-    <element-block name="Bg" color="#7E6551" class="close"></element-block>
-    <div class="element-content">
+  <section class="section">
+    <div class="blog-container container">
       <h1 class="title">Recent Posts</h1>
-    </div>
+
       <div *ngFor="let item of myBlog | slice:0:1; let i=index">{{item.title}}</div>
-  </div>
+    </div>
+  </section>
 </div>

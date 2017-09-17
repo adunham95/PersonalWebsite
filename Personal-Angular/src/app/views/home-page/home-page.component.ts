@@ -12,6 +12,7 @@ export class HomePageComponent implements OnInit {
 
   myResume;
   myBlog;
+  myProject;
 
   constructor(private resume: ResumeService, private blogService: BlogService) {}
 
@@ -30,7 +31,18 @@ export class HomePageComponent implements OnInit {
     });
   }
 
+  getMyProjects(){
+    this.resume.getAllProjects().subscribe(projects =>{
+      this.myProject = projects.projects.reverse();
+      console.log(this.myProject)
+    }, err =>{
+      console.log(err);
+      return false
+    })
+  }
+
   ngOnInit() {
+    this.getMyProjects();
     this.getMyResume();
     this.getMyBlog();
   }

@@ -1,14 +1,25 @@
 import { Injectable } from '@angular/core';
+import { Http, Headers } from "@angular/http";
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ResumeService {
 
   resume;
-  blog;
+  isProd: boolean;
 
-  constructor() {
-
+  constructor(private http: Http) {
+    this.isProd = false
   }
+
+  getEndpoint(ep){
+    if(this.isProd){
+      return ep
+    }
+    else {
+      return 'http://localhost:8080/'+ep
+    }
+  };
 
   getResume(){
     this.resume = {
@@ -194,4 +205,17 @@ export class ResumeService {
     return this.resume;
   }
 
+  saveProject(project){
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    let endPoint = this.getEndpoint('projects/saveproject');
+    return this.http.post(endPoint, project, {headers: headers}).map(res => res.json())
+  }
+
+  getAllProjects(){
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    let endPoint = this.getEndpoint('projects/getprojects');
+    return this.http.get(endPoint, {headers: headers}).map(res => res.json())
+  }
 }

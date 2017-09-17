@@ -23,20 +23,19 @@ h1, h2, h3 {
 .button{
   border: none;
   color: white;
-  padding: 10px;
 }
-.update {
+.updateButton {
   background-color: #FF9A00;
 }
-.update:hover{
+.updateButton:hover{
    background-color: #FF7400;
  }
 
 
-.delete {
+.deleteButton {
   background-color: #EF3B2C;
 }
-.delete:hover{
+.deleteButton:hover{
   background-color: #CB181D;
 }
 

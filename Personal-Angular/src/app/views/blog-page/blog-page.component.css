@@ -1,11 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 .main-content {
-  padding: 20px;
   color: black;
   font-family: 'Ubuntu', sans-serif;
 }
 
 .post-card {
   margin: 10px 0;
+}
+
+@media screen and (min-width: 426px) {
+
+  h1.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .project-card {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+
+  .title {
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    margin: 0 10px;
+  }
+
 }

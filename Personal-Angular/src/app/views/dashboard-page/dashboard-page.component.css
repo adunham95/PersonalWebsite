@@ -30,7 +30,7 @@
     width: 25%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   .link {
@@ -39,7 +39,7 @@
     padding: 20px;
   }
   .link:hover{
-    background-color: #228B22;
+    background-color: #00a1ff;
   }
 
   .dashView{
@@ -48,8 +48,8 @@
   }
 
   .linkActive {
-    border-left: solid darkgreen 5px;
-    background-color: green;
+    border-left: solid #00a1ff 5px;
+    background-color: #0000cc ;
   }
 }
 
@@ -71,6 +71,6 @@
   }
 
   .linkActive {
-    background-color: green;
+    background-color: #00a1ff;
   }
 }

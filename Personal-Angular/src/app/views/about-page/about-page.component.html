@@ -1,31 +1,23 @@
 <div class="main-content">
 
   <div class="container">
-    <element-block name='Am' color="#2B6240"></element-block>
+    <h1 class="title">About Me</h1>
 
-    <div class="element-content">
-      <h1 class="title">About Me</h1>
-
-      <p>
-        {{ myResume.about.aboutMe}}
-      </p>
-    </div>
+    <p>
+      {{ myResume.about.aboutMe}}
+    </p>
   </div>
 
 
   <div class="container">
-    <element-block name="Mi" color="#85BDA6"></element-block>
+    <h1 class="title">Milestones</h1>
 
-    <div class="element-content">
-      <h1 class="title">Milestones</h1>
-
-      <ul>
-        <li *ngFor="let item of myResume.about.accomplishments">
-          <h3>{{item.title}}</h3>
-          <time>{{item.date}}</time>
-        </li>
-      </ul>
-    </div>
+    <ul>
+      <li *ngFor="let item of myResume.about.accomplishments">
+        <h3>{{item.title}}</h3>
+        <time>{{item.date}}</time>
+      </li>
+    </ul>
   </div>
 
   <element-contact></element-contact>

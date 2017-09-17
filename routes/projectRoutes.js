@@ -4,8 +4,8 @@ const router = express.Router();
 const Project = require('../models/projectModel');
 const config = require('../config/database');
 
-// Add blog post
-router.post('/savepost', (req, res, next) => {
+// Add Project
+router.post('/saveproject', (req, res, next) => {
   let newProject = new Project({
     name: req.body.name,
     role: req.body.role,
@@ -17,7 +17,7 @@ router.post('/savepost', (req, res, next) => {
     technology: req.body.technology
   });
 
-  Project.addPost(newProject, (err, post) =>{
+  Project.addProject(newProject, (err, project) =>{
     if(err){
       res.json({success: false, msg: "Failed to add project"})
     }
@@ -28,7 +28,7 @@ router.post('/savepost', (req, res, next) => {
 });
 
 router.get('/getprojects', (req, res, next) => {
-  Project.getAllPosts((err, projects) => {
+  Project.getAllProjects((err, projects) => {
     if (err){
       res.json({success: false, msg: "Error retrieving projects"});
     }
@@ -43,7 +43,7 @@ router.get('/getprojects', (req, res, next) => {
 
 router.post('/deleteproject', (req, res, next) => {
   let id = req.body._id;
-  Project.deleteSinglePost(id, (err =>{
+  Project.deleteSingleProject(id, (err =>{
     if (err) {
       res.json({success: false, msg: "Error deleting project"});
     }
@@ -53,7 +53,7 @@ router.post('/deleteproject', (req, res, next) => {
   }))
 });
 
-router.post('/update', (req, res, next) => {
+router.post('/updateproject', (req, res, next) => {
   let id= req.body._id;
   let name= req.body.name;
   Project.updateProject(id, (err =>{

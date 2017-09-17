@@ -13,8 +13,8 @@
     <label class="post-card-item">Blog Body</label>
     <textarea style="height: 200px"  [(ngModel)]="selectedPost.body" class="post-card-item"></textarea>
     <div class="actions post-card-item">
-      <input type="button" class="button delete" (click)="delete(selectedPost._id)" value="Delete">
-      <input type="button" class="button update" (click)="update()" value="Update">
+      <input type="button" class="button deleteButton" (click)="delete(selectedPost._id)" value="Delete">
+      <input type="button" class="button updateButton" (click)="update()" value="Update">
     </div>
   </div>
 </div>
